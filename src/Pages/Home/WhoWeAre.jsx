@@ -2,10 +2,10 @@ import image from '../../assets/logoash2.webp'
 
 const WhoWeAre = () => {
     return (
-        <section className="py-10 md:px-20 flex items-center justify-between gap-40">
+        <section className="py-10 md:px-20 px-4 flex items-center justify-between md:flex-row flex-col md:gap-40 gap-10">
             <div>
-                <h2 className="text-5xl mb-10">WHO <span className='text-slate-400'>WE ARE</span></h2>
-                <p className='text-3xl font-light'>
+                <h2 className="md:text-5xl text-3xl md:mb-10 mb-5">WHO <span className='text-slate-400'>WE ARE</span></h2>
+                <p className='md:text-3xl font-light'>
                     Nestled in Bengaluru for five years, Ashwasurya Realities
                     stands as a beacon of excellence in ploed development. Our
                     projects seamlessly blend modern living with nature, oering
@@ -23,7 +23,7 @@ const WhoWeAre = () => {
                 </p>
             </div>
             <div>
-                <img src={image} alt="" className='min-w-60' />
+                <img src={image} alt="" className='md:min-w-60 w-52' />
             </div>
         </section>
     );

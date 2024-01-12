@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 
 const OurProjects = () => {
     return (
-        <section className="py-10 md:px-20">
-            <h2 className="text-5xl mb-10 text-right">OUR <span className='text-slate-400'>PROJECTS</span></h2>
-            <div className="grid grid-cols-3 grid-rows-4 gap-5">
-                <div className="bg-slate-200 p-4 min-h-48 relative col-span-2">
+        <section className="py-10 md:px-20 px-4">
+            <h2 className="md:text-5xl text-3xl md:mb-10 mb-5 md:text-right">OUR <span className='text-slate-400'>PROJECTS</span></h2>
+            <div className="grid md:grid-cols-3 grid-cols-1 md:grid-rows-4 gap-5">
+                <div className="bg-slate-200 p-4 min-h-48 relative md:col-span-2">
                     <div className="absolute bottom-3 right-4">
                         <Link className="flex items-center gap-1 hover:outline outline-1 hover:bg-white px-2 py-1">EXPLORE <BiSolidRightArrow className="text-slate-500" /></Link>
                     </div>

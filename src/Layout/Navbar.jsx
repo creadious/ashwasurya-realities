@@ -7,7 +7,7 @@ const Navbar = () => {
         <nav className="fixed w-full top-0 z-40">
             <div className="">
                 <div className="absolute right-0 z-20 ">
-                    <button onClick={() => setOpen(!open)} className="text-white text-3xl p-5">
+                    <button onClick={() => setOpen(!open)} className="text-white hover:text-slate-300 md:text-3xl text-xl md:p-5 p-3 md:backdrop-brightness-75 backdrop-brightness-50">
                         {
                             open ?
                                 <IoMdClose />
