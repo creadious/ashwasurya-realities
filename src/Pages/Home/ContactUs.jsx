@@ -14,7 +14,9 @@ const ContactUs = () => {
     }
 
     return (
-        <section className="md:px-20 md:py-1 md:pb-10 pb-5">
+        <section 
+        id="contact"
+        className="md:px-20 md:py-1 md:pb-10 pb-5">
             <h2 className="md:text-5xl text-3xl md:mb-10 mb-5 md:text-left text-center">CONTACT <span className='text-slate-400'>US</span></h2>
             <div className="grid md:grid-cols-2 grid-cols-1">
                 <div className="md:order-1 order-2">

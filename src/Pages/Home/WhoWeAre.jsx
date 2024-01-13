@@ -2,7 +2,9 @@ import image from '../../assets/logoash2.webp'
 
 const WhoWeAre = () => {
     return (
-        <section className="py-10 md:px-20 px-4 flex items-center justify-between md:flex-row flex-col md:gap-40 gap-10">
+        <section
+        id='about'
+        className="py-10 md:px-20 px-4 flex items-center justify-between md:flex-row flex-col md:gap-40 gap-10">
             <div>
                 <h2 className="md:text-5xl text-3xl md:mb-10 mb-5">WHO <span className='text-slate-400'>WE ARE</span></h2>
                 <p className='md:text-3xl font-light'>

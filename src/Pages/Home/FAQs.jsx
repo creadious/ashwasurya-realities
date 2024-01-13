@@ -45,7 +45,9 @@ const FAQs = () => {
     };
 
     return (
-        <section className="py-10 md:px-20 px-4">
+        <section 
+        id="service"
+        className="py-10 md:px-20 px-4">
             <h2 className="md:text-5xl text-3xl md:mb-10 mb-5 text-slate-400 text-center">FAQ</h2>
             <div>
                 {faqs.map((faq, index) => (

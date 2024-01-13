@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
 import { Link } from "react-router-dom";
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
 const Navbar = () => {
     const [open, setOpen] = useState(false);
@@ -25,6 +26,10 @@ const Navbar = () => {
         setOpen(!open);
     };
 
+    const scrollToTop = () => {
+        scroll.scrollToTop();
+    };
+
     return (
         <nav className="fixed w-full top-0 z-40">
             <div className="">
@@ -43,19 +48,27 @@ const Navbar = () => {
                 >
                     <ul className="text-white w-full h-full flex flex-col justify-center items-center gap-5 text-2xl">
                         <li>
-                            <Link to="/">Home</Link>
+                            <Link to="/" onClick={scrollToTop}>
+                                Home
+                            </Link>
                         </li>
                         <li>
                             <Link to="/projects">Projects</Link>
                         </li>
                         <li>
-                            <a href="#">About</a>
+                            <ScrollLink to="about" smooth={true} duration={500}>
+                                About
+                            </ScrollLink>
                         </li>
                         <li>
-                            <a href="#">Service</a>
+                            <ScrollLink to="service" smooth={true} duration={500}>
+                                Service
+                            </ScrollLink>
                         </li>
                         <li>
-                            <a href="#">Contact</a>
+                            <ScrollLink to="contact" smooth={true} duration={500}>
+                                Contact
+                            </ScrollLink>
                         </li>
                     </ul>
                 </div>

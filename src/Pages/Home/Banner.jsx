@@ -5,6 +5,11 @@ import { FaWhatsapp } from "react-icons/fa";
 import { IoCall } from "react-icons/io5";
 
 const Banner = () => {
+
+    const phoneNumber = "+918549964996";
+    const whatsappNumber = "919986157030";
+
+
     return (
         <section>
             <div className="h-screen bg-cover relative bg-center" style={{ backgroundImage: `url(${image})` }} >
@@ -23,10 +28,10 @@ const Banner = () => {
 
                 <div className='text-black text-2xl absolute right-0 top-1/2 -translate-y-1/2'>
                     <div className='flex flex-col gap-3'>
-                        <a href="#" className='bg-[#985527] hover:bg-[#e39968] p-3 inline-block'>
+                        <a href={`https://wa.me/${whatsappNumber}`} className='bg-[#985527] hover:bg-[#e39968] p-3 inline-block'>
                             <FaWhatsapp />
                         </a>
-                        <a href="#" className='bg-[#985527] hover:bg-[#e39968] p-3 inline-block'>
+                        <a href={`tel:${phoneNumber}`} className='bg-[#985527] hover:bg-[#e39968] p-3 inline-block'>
                             <IoCall />
                         </a>
                     </div>
