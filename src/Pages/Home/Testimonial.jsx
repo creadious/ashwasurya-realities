@@ -42,7 +42,7 @@ const Testimonial = () => {
                     [...Array(5)].map((_, i) => {
 
                         return <SwiperSlide key={i}>
-                            <div className="relative h-48 bg-slate-200 mt-20 hover:bg-yellow-300 duration-200">
+                            <div className="relative h-48 bg-slate-200 mt-20 hover:bg-yellow-300 duration-200 cursor-default">
                                 <div className="absolute left-0 -top-12 p-3 px-5 w-full">
                                     <img src="https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg" alt="" className="w-20 h-28 object-cover" />
                                     <p className="mt-3 text-sm">
