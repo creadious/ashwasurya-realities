@@ -17,8 +17,8 @@ const Projects = () => {
     return (
         <section className="">
             <div className='md:h-[28rem] h-96 bg-cover bg-center' style={{ backgroundImage: `url(${coverBg})` }} >
-                <div className='h-full backdrop-brightness-50 relative'>
-                    <img src={logo} alt="" className='w-20 md:mx-0 mx-auto absolute top-5 md:left-20 left-5' />
+                <div className='h-full backdrop-brightness-75 relative'>
+                    <img src={logo} alt="" className='md:w-44 w-20 md:mx-0 mx-auto absolute top-5 md:left-20 left-5' />
                     <h2 className='text-white md:text-6xl text-xl absolute bottom-20 left-1/2 -translate-x-1/2' style={{ fontFamily: "Herr Von Muellerhoff" }} >where plots transform into destinies</h2>
                     <h1 className='md:text-5xl text-2xl uppercase font-bold text-white absolute right-5 bottom-5'>Projects</h1>
                 </div>
