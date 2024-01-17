@@ -17,7 +17,7 @@ const OurProjects = () => {
                 <div className="min-h-24 relative md:col-span-2 overflow-hidden">
                     <img src={image1} alt="" className="w-full h-full hover:scale-105 duration-200 object-cover" />
                     <div className="absolute text-sm md:bottom-2 md:right-2 bottom-1 right-1">
-                        <Link className="flex items-center gap-1 hover:outline outline-1 hover:bg-white px-2 py-1 md:text-base text-[10px]">EXPLORE <BiSolidRightArrow className="text-slate-500" /></Link>
+                        <Link to={`/maintenance`} className="flex items-center gap-1 hover:outline outline-1 hover:bg-white px-2 py-1 md:text-base text-[10px]">EXPLORE <BiSolidRightArrow className="text-slate-500" /></Link>
                     </div>
                     {/* text contents start 1 */}
                     <div className="absolute md:right-5 md:top-5 top-2 right-2">
@@ -42,7 +42,7 @@ const OurProjects = () => {
                 <div className="min-h-48 relative row-span-4 overflow-hidden">
                     <img src={image2} alt="" className="w-full h-full hover:scale-105 duration-200 object-cover" />
                     <div className="absolute text-sm md:bottom-2 md:right-2 bottom-1 right-1">
-                        <Link className="flex items-center gap-1 hover:outline outline-1 text-white hover:text-black hover:bg-white px-2 py-1 md:text-base text-[10px]">EXPLORE <BiSolidRightArrow className="text-slate-500" /></Link>
+                        <Link to={`/maintenance`} className="flex items-center gap-1 hover:outline outline-1 text-white hover:text-black hover:bg-white px-2 py-1 md:text-base text-[10px]">EXPLORE <BiSolidRightArrow className="text-slate-500" /></Link>
                     </div>
                     {/* text contents start 2 */}
                     <div className="absolute left-1/2 -translate-x-1/2 top-5 text-white">
@@ -67,7 +67,7 @@ const OurProjects = () => {
                 <div className="min-h-48 relative row-span-2 overflow-hidden">
                     <img src={image3} alt="" className="w-full h-full hover:scale-105 duration-200 object-cover" />
                     <div className="absolute text-sm md:bottom-2 md:right-2 bottom-1 right-1">
-                        <Link className="flex items-center gap-1 hover:outline outline-1 text-white hover:text-black hover:bg-white px-2 py-1 md:text-base text-[10px]">EXPLORE <BiSolidRightArrow className="text-slate-300" /></Link>
+                        <Link to={`/maintenance`} className="flex items-center gap-1 hover:outline outline-1 text-white hover:text-black hover:bg-white px-2 py-1 md:text-base text-[10px]">EXPLORE <BiSolidRightArrow className="text-slate-300" /></Link>
                     </div>
 
                     {/* text contents start 3 */}
@@ -93,7 +93,7 @@ const OurProjects = () => {
                 <div className="min-h-48 relative row-span-3 overflow-hidden">
                     <img src={image4} alt="" className="w-full h-full hover:scale-105 duration-200 object-cover" />
                     <div className="absolute text-sm md:bottom-2 md:right-2 bottom-1 right-1">
-                        <Link className="flex items-center gap-1 hover:outline outline-1 text-white hover:text-black hover:bg-white px-2 py-1 md:text-base text-[10px]">EXPLORE <BiSolidRightArrow className="text-slate-500" /></Link>
+                        <Link to={`/maintenance`} className="flex items-center gap-1 hover:outline outline-1 text-white hover:text-black hover:bg-white px-2 py-1 md:text-base text-[10px]">EXPLORE <BiSolidRightArrow className="text-slate-500" /></Link>
                     </div>
                     {/* text contents start 4 */}
                     <div className="absolute left-1/2 -translate-x-1/2 top-5 text-white">
@@ -118,7 +118,7 @@ const OurProjects = () => {
                 <div className="min-h-48 relative overflow-hidden">
                     <img src={image5} alt="" className="w-full h-full hover:scale-105 duration-200 object-cover" />
                     <div className="absolute text-sm md:bottom-2 md:right-2 bottom-1 right-1">
-                        <Link className="flex items-center gap-1 hover:outline outline-1 text-slate-300 hover:text-black hover:bg-white px-2 py-1 md:text-base text-[10px]">EXPLORE <BiSolidRightArrow className="text-slate-300" /></Link>
+                        <Link to={`/maintenance`} className="flex items-center gap-1 hover:outline outline-1 text-slate-200 hover:text-black hover:bg-white px-2 py-1 md:text-base text-[10px]">EXPLORE <BiSolidRightArrow className="text-slate-200" /></Link>
                     </div>
                     {/* text contents start 5 */}
                     <div className="absolute md:left-5 left-2 md:top-5 top-2 text-white">
@@ -143,7 +143,7 @@ const OurProjects = () => {
                 </div>
             </div>
             <div className="md:mt-14 mt-8 grid place-content-center">
-                <Link to={`/projects`} className="flex items-center gap-1 outline outline-1 hover:bg-black hover:text-white px-5 py-1 text-lg">VIEW ALL</Link>
+                <Link to={`/maintenance`} className="flex items-center gap-1 outline outline-1 hover:bg-black hover:text-white px-5 py-1 text-lg">VIEW ALL</Link>
             </div>
         </section>
     );

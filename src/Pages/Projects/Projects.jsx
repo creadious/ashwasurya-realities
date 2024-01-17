@@ -11,6 +11,7 @@ import 'swiper/css/pagination';
 // import required modules
 import { Pagination, Autoplay } from 'swiper/modules';
 import { Link } from 'react-router-dom';
+import { projects } from './projectsData';
 
 
 const Projects = () => {
@@ -40,7 +41,7 @@ const Projects = () => {
                         //     clickable: true,
                         // }}
                         autoplay={{
-                            delay: 2500,
+                            delay: 5000,
                             disableOnInteraction: false,
                         }}
                         breakpoints={{
@@ -57,23 +58,24 @@ const Projects = () => {
                                 spaceBetween: 40,
                             },
                             1024: {
-                                slidesPerView: 6,
+                                slidesPerView: 4,
                                 spaceBetween: 50,
                             },
                         }}
                         modules={[Pagination, Autoplay]}
                     >
                         {
-                            [...Array(7)].map((_, i) => {
+                            projects.map((V) => {
+                                const {id, title, image} = V;
 
-                                return <SwiperSlide key={i}>
+                                return <SwiperSlide key={id}>
                                     <div className="bg-cover bg-center">
-                                        <img src="https://img.freepik.com/free-photo/analog-landscape-city-with-buildings_23-2149661456.jpg" alt="" className='h-72 w-full object-cover' />
+                                        <img src={image} alt="" className='h-96 w-full object-cover' />
                                         <div className='text-center font-bold py-5'>
                                             <h5 className='text-sm'>ASHWASURYA</h5>
-                                            <h2 className='text-xl'>DESTINY FARM</h2>
+                                            <h2 className='text-3xl text-nowrap'>{title}</h2>
                                             <div className='mt-2'>
-                                                <Link className='text-sm font-medium px-2 py-1 border border-black duration-200 hover:bg-black hover:text-white'>
+                                                <Link to={`/maintenance`} className='text-sm font-medium px-2 py-1 border border-black duration-200 hover:bg-black hover:text-white'>
                                                     KNOW MORE
                                                 </Link>
                                             </div>

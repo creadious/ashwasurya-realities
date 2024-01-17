@@ -80,11 +80,11 @@ const Testimonial = () => {
                         const { id, name, review } = value;
                         // console.log(name.split(' '))
                         return <SwiperSlide key={id}>
-                            <div className="relative h-48 bg-slate-200 mt-20 hover:bg-yellow-300 duration-200 cursor-default">
-                                <div className="absolute left-0 -top-12 p-3 px-5 w-full">
+                            <div className="relative md:h-52 h-60 bg-slate-200 mt-20 hover:bg-yellow-300 duration-200 cursor-default">
+                                <div className="absolute left-0 -top-16 p-3 px-5 w-full">
                                     <img src="https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg" alt="" className="w-20 h-28 object-cover" />
-                                    <p className="mt-3 text-sm">
-                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt sint recusandae illo assumenda eum quos tempora blanditiis minus laboriosam nesciunt, labore magni quasi accusantium. Perspiciatis repudiandae ratione labore dolorum hic.
+                                    <p className="text-xs mt-2">
+                                        {review}
                                     </p>
                                 </div>
                                 <h5 className="absolute right-5 top-3 text-xs font-semibold">{/*JYESTA*/} <span className="text-lg">{name}</span></h5>
