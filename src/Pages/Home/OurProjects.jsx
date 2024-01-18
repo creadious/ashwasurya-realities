@@ -143,7 +143,7 @@ const OurProjects = () => {
                 </div>
             </div>
             <div className="md:mt-14 mt-8 grid place-content-center">
-                <Link to={`/maintenance`} className="flex items-center gap-1 outline outline-1 hover:bg-black hover:text-white px-5 py-1 text-lg">VIEW ALL</Link>
+                <Link to={`/projects`} className="flex items-center gap-1 outline outline-1 hover:bg-black hover:text-white px-5 py-1 text-lg">VIEW ALL</Link>
             </div>
         </section>
     );

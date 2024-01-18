@@ -54,21 +54,21 @@ const Navbar = () => {
                                 Home
                             </Link>
                         </li>
-                        <li>
+                        {/* <li>
                             <Link to="/projects">Projects</Link>
-                        </li>
+                        </li> */}
                         <li>
-                            <ScrollLink to="about" smooth={true} duration={500}>
+                            <ScrollLink to="about" className="cursor-pointer" smooth={true} duration={500}>
                                 About
                             </ScrollLink>
                         </li>
                         <li>
-                            <ScrollLink to="service" smooth={true} duration={500}>
+                            <ScrollLink to="service" className="cursor-pointer" smooth={true} duration={500}>
                                 Service
                             </ScrollLink>
                         </li>
                         <li>
-                            <ScrollLink to="contact" smooth={true} duration={500}>
+                            <ScrollLink to="contact" className="cursor-pointer" smooth={true} duration={500}>
                                 Contact
                             </ScrollLink>
                         </li>

@@ -1,3 +1,7 @@
+import user1 from '../../assets/Srikanth.jpeg';
+import user2 from '../../assets/kaveyashree.jpeg';
+import user3 from '../../assets/nethra.jpeg';
+
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -16,13 +20,13 @@ const Testimonial = () => {
             id: 1,
             name: 'Srikanth Hogade',
             review: "There are many Real-estate companies in the market but Trust factor is much important. Ashwasurya realities has already gained Trust in the market and they are very good at maintaining customer relationships. Overall it was very good experience from visiting your office till the registration of site. Special Thanks to Miss. Shruthi, she is very much kind person and supportive throughout the process.",
-            image: ''
+            image: user1
         },
         {
             id: 2,
             name: 'Kavyashree S',
             review: "TGood experience Ashwasurya realities project and staffs are decent in treating customers. We purchased plot in Ruthvi. Madhan is very patient in answering all our queries and responded in a timely manner and guided us through the entire process thoroughly. Thanks.",
-            image: ''
+            image: user2
         },
         {
             id: 3,
@@ -40,7 +44,7 @@ const Testimonial = () => {
             id: 5,
             name: 'Nethra M',
             review: "We came across Ashwasurya through newspapers. My parents enquired about it and felt it was genuine. We went and visited the propeVery good project. They are very transparent about the documents. Staff are good especially Pradeep whom I coordinated the most. He is very calm and composed and clarified all our queries. Geetha mam is very understanding and polite. I would definitely suggest Ashwasurya, the right project to invest.",
-            image: ''
+            image: user3
         },
 
     ]
@@ -77,12 +81,12 @@ const Testimonial = () => {
             >
                 {
                     reviews.map((value) => {
-                        const { id, name, review } = value;
+                        const { id, name, review, image } = value;
                         // console.log(name.split(' '))
                         return <SwiperSlide key={id}>
                             <div className="relative md:h-52 h-60 bg-slate-200 mt-20 hover:bg-yellow-300 duration-200 cursor-default">
                                 <div className="absolute left-0 -top-16 p-3 px-5 w-full">
-                                    <img src="https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg" alt="" className="w-20 h-28 object-cover" />
+                                    <img src={image || "https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg"} alt="" className="w-20 h-28 object-cover" />
                                     <p className="text-xs mt-2">
                                         {review}
                                     </p>
