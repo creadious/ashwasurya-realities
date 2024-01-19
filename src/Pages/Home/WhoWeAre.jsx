@@ -7,7 +7,7 @@ const WhoWeAre = () => {
             className="py-10 md:px-20 px-4 flex items-center justify-between md:flex-row flex-col md:gap-40 gap-10">
             <div>
                 <h2 className="md:text-5xl text-3xl md:mb-10 mb-5">WHO <span className='text-slate-400'>WE ARE</span></h2>
-                <p className='md:text-2xl font-light'>
+                <p className='md:text-xl font-light'>
                     <p>
                         Nestled in Bengaluru for five years, Ashwasurya Realities
                         stands as a beacon of excellence in plotted development. Our

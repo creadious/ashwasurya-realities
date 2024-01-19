@@ -25,7 +25,7 @@ export const router = createBrowserRouter([
                 element: <UnderMaintain />
             },
             {
-                path: '/atharva',
+                path: '/projects/atharva',
                 element: <Atharva />
             },
         ]

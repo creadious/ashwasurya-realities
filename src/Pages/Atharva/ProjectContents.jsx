@@ -15,16 +15,15 @@ const ProjectContents = () => {
                     </span>
                 </p>
             </div>
-            <p className="md:w-2/3 mx-auto md:text-3xl mt-10">
-                is a BMICAPA and RERAApproved A Khata 20Acres Project
-                located off Mysore Road, <br />
-                a bustling corridor witnessing significant and rapid development.
+            <p className="md:w-2/3 mx-auto md:text- mt-10">
+                is a BMICAPA and RERA Approved A Khata 20Acres Project
+                located off Mysore Road, a bustling corridor witnessing significant and rapid development.
                 The site's strategic location near key areas represents
                 a blend of joy and sustainability, featuring meticulously
                 designed landscapes and charming gazebos
             </p>
-            <div className="md:mt-20 mt-10">
-                <button className="md:text-2xl px-3 py-1 border-2 border-black">
+            <div className="md:mt-16 mt-10">
+                <button className="md:text-sm font-semibold hover:bg-black hover:text-white duration-200 px-4 py-2 border-2 border-black">
                     DOWNLOAD BROCHURE
                 </button>
             </div>
