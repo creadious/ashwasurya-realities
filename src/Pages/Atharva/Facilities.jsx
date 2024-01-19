@@ -4,7 +4,7 @@ import locationImage from '../../assets/project/location.png';
 
 const Facilities = () => {
     return (
-        <section className='py-10 md:px-20 px-4 grid md:grid-cols-2 grid-cols-1 md:gap-20 gap-10'>
+        <section className='py-10 md:px-20 px-6 grid md:grid-cols-2 grid-cols-1 md:gap-20 gap-10'>
             <div className='px-2'>
                 <h4 className='text-2xl font-semibold'>EDUCATIONAL INSTITUTIONS</h4>
                 <p>
