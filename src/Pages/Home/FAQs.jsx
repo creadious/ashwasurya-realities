@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { IoIosArrowUp } from "react-icons/io";
+
+import FAQComponent from "../../Components/FAQComponent/FAQComponent";
 
 const FAQs = () => {
 
@@ -38,34 +38,14 @@ const FAQs = () => {
         },
     ];
 
-    const [openIndex, setOpenIndex] = useState(null);
-
-    const toggleFAQ = (index) => {
-        setOpenIndex(openIndex === index ? null : index);
-    };
-
+ 
     return (
-        <section 
-        id="service"
-        className="py-10 md:px-20 px-4">
+        <section
+            id="service"
+            className="py-10 md:px-20 px-4">
             <h2 className="md:text-5xl text-3xl md:mb-10 mb-5 text-slate-400 text-center">FAQ</h2>
             <div>
-                {faqs.map((faq, index) => (
-                    <div key={index} className="mb-4">
-                        <div
-                            className="cursor-pointer bg-gray-100 p-4 rounded-md transition duration-500 ease-in-out shadow-xl"
-                            onClick={() => toggleFAQ(index)}
-                        >
-                            <div className="flex justify-between items-center gap-2">
-                                <h2 className="md:text-lg text-xs font-semibold">{faq.question}</h2>
-                                <span className={`${openIndex === index ? 'rotate-180' : 'rotate-0'} duration-300`}><IoIosArrowUp /></span>
-                            </div>
-                        </div>
-                        <div className={`mt-2 rounded-md overflow-hidden duration-500 ${openIndex === index ? 'max-h-96' : 'max-h-0'}`}>
-                            <p className="p-4 md:text-base text-xs">{faq.answer}</p>
-                        </div>
-                    </div>
-                ))}
+                <FAQComponent faqs={faqs} />
             </div>
         </section>
     );

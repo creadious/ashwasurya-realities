@@ -25,7 +25,8 @@ export const projectsOngoing = [
     {
         id: 3,
         title: "ATHARVA RITEWAY",
-        image: project3
+        image: project3,
+        link:'/atharva'
     },
     {
         id: 4,

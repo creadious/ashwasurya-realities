@@ -93,7 +93,7 @@ const OurProjects = () => {
                 <div className="min-h-48 relative row-span-3 overflow-hidden">
                     <img src={image4} alt="" className="w-full h-full hover:scale-105 duration-200 object-cover" />
                     <div className="absolute text-sm md:bottom-2 md:right-2 bottom-1 right-1">
-                        <Link to={`/maintenance`} className="flex items-center gap-1 hover:outline outline-1 text-white hover:text-black hover:bg-white px-2 py-1 md:text-base text-[10px]">EXPLORE <BiSolidRightArrow className="text-slate-500" /></Link>
+                        <Link to={`/atharva`} className="flex items-center gap-1 hover:outline outline-1 text-white hover:text-black hover:bg-white px-2 py-1 md:text-base text-[10px]">EXPLORE <BiSolidRightArrow className="text-slate-500" /></Link>
                     </div>
                     {/* text contents start 4 */}
                     <div className="absolute left-1/2 -translate-x-1/2 top-5 text-white">

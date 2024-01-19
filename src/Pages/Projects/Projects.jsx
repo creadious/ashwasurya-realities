@@ -72,7 +72,7 @@ const Projects = () => {
                             >
                                 {
                                     projectsOngoing.map((V) => {
-                                        const { id, title, image } = V;
+                                        const { id, title, image, link } = V;
 
                                         return <SwiperSlide key={id}>
                                             <div className="bg-cover bg-center">
@@ -81,7 +81,7 @@ const Projects = () => {
                                                     <h5 className='text-sm'>ASHWASURYA</h5>
                                                     <h2 className='text-3xl text-nowrap'>{title}</h2>
                                                     <div className='mt-2'>
-                                                        <Link to={`/maintenance`} className='text-sm font-medium px-2 py-1 border border-black duration-200 hover:bg-black hover:text-white'>
+                                                        <Link to={link || `/maintenance`} className='text-sm font-medium px-2 py-1 border border-black duration-200 hover:bg-black hover:text-white'>
                                                             KNOW MORE
                                                         </Link>
                                                     </div>
@@ -127,7 +127,7 @@ const Projects = () => {
                                     {
 
                                         projectsCompleted.map((V) => {
-                                            const { id, title, image } = V;
+                                            const { id, title, image, link } = V;
 
                                             return <SwiperSlide key={id}>
                                                 <div className="bg-cover bg-center">
@@ -136,7 +136,7 @@ const Projects = () => {
                                                         <h5 className='text-sm'>ASHWASURYA</h5>
                                                         <h2 className='text-3xl text-nowrap'>{title}</h2>
                                                         <div className='mt-2'>
-                                                            <Link to={`/maintenance`} className='text-sm font-medium px-2 py-1 border border-black duration-200 hover:bg-black hover:text-white'>
+                                                            <Link to={link || `/maintenance`} className='text-sm font-medium px-2 py-1 border border-black duration-200 hover:bg-black hover:text-white'>
                                                                 KNOW MORE
                                                             </Link>
                                                         </div>
