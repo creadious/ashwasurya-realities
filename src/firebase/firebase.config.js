@@ -18,3 +18,5 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const textDB = getFirestore(app);
 export { textDB };
+
+export default app;

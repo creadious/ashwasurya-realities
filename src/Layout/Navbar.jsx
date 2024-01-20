@@ -72,11 +72,6 @@ const Navbar = () => {
                                 Contact
                             </ScrollLink>
                         </li>
-                        <li>
-                            <Link to="/admin/login">
-                                Admin
-                            </Link>
-                        </li>
                     </ul>
                 </div>
             </div>

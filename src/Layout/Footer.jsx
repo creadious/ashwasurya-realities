@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import image from '../assets/logoash.webp';
 
 import { FaFacebookSquare, FaInstagramSquare, FaLinkedin, FaYoutube } from "react-icons/fa";
@@ -13,6 +14,9 @@ const Footer = () => {
                     <h4 className='mb-3'>CONTACT INFO</h4>
                     <p>+91 85 4996 4996</p>
                     <p>geethanjali@ashwasuryarealities.com</p>
+                    <Link to="/admin/login" className='text-xs underline'>
+                        Admin
+                    </Link>
                 </div>
                 <div className='flex gap-8 items-center'>
                     <a href="https://www.facebook.com/AshwasuryaRealitiesCompany/" target='_blank' title='Facebook' className='w-10 h-10 rounded-full bg-white grid place-content-center text-3xl overflow-hidden'>

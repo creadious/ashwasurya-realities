@@ -23,7 +23,7 @@ const ExportExcelButton = ({ data, fileName }) => {
             { label: 'Name', key: 'name' },
             { label: 'Email', key: 'email' },
             { label: 'Phone', key: 'phone' },
-            { label: 'Project', key: 'projectName' },
+            { label: 'Project Name', key: 'projectName' },
         ];
 
         // Map data to match the custom column order
@@ -56,7 +56,7 @@ const ExportExcelButton = ({ data, fileName }) => {
     return (
         <div>
             <div className='grid place-content-center'>
-                <button onClick={() => setShow(!show)} className='font-semibold outline-2 outline px-4 uppercase flex items-center gap-2'>
+                <button onClick={() => setShow(!show)} className='font-semibold text-xs outline-2 outline px-4 py-1 uppercase flex items-center gap-2'>
                     Export
                     <FaFileExcel />
                 </button>

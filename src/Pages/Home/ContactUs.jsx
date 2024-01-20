@@ -45,7 +45,7 @@ const ContactUs = () => {
 
         const sendData = await useFireStore(data)
         if (sendData) {
-            toast.success('Download starting...');
+            toast.success('Send successfully');
         }
         else {
             toast.error('Somethings is wrong');

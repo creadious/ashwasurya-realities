@@ -2,8 +2,8 @@ import { collection, getDocs, orderBy, query } from 'firebase/firestore';
 import { useEffect, useState } from 'react';
 import { textDB } from '../../../firebase/firebase.config';
 
-import { ImSpinner2 } from "react-icons/im";
 import ExportExcelButton from '../../../Components/ExportExcelButton/ExportExcelButton';
+import LoadingAnimation from '../../../Components/LoadingAnimation/LoadingAnimation';
 
 const UserData = () => {
 
@@ -34,9 +34,7 @@ const UserData = () => {
 
 
     if (isLoading) {
-        return <div className='h-[30rem] grid place-content-center'>
-            <ImSpinner2 className='text-4xl animate-spin text-yellow-700' />
-        </div>
+        return <LoadingAnimation/>
     }
 
 

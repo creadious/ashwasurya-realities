@@ -1,13 +1,27 @@
-import { Link, Outlet } from 'react-router-dom';
+import { Link, Outlet, useNavigate } from 'react-router-dom';
 import logo from '../assets/logoash2.webp'
 import { useState } from 'react';
 import { HiOutlineMenuAlt2 } from "react-icons/hi";
 import { IoMdClose } from "react-icons/io";
 
+import toast from 'react-hot-toast';
+import useAuth from '../hooks/useAuth';
+
 const Admin = () => {
 
     const [drawer, setDrawer] = useState(false);
+    const navigate = useNavigate()
+    const { logOut } = useAuth();
 
+    const handleLogout = () => {
+        logOut()
+            .then(() => {
+                navigate('/admin/login');
+                toast.success(`Admin logout successfully`);
+                console.log('User Logout')
+            })
+            .catch((err) => console.log(err))
+    }
 
     return (
         <div className='flex md:gap-10'>
@@ -29,7 +43,7 @@ const Admin = () => {
                         <Link to={'/admin/user-data'} className='w-full block md:py-2 md:px-5 px-4 py-2 bg-white rounded-full shadow-2xl'>Customers Data</Link>
                     </div>
                     <div className='absolute bottom-5 md:w-64 w-52 left-6'>
-                        <button onClick={() => { }} className='bg-white w-full px-3 py-1 shadow-inner border border-black' >Logout</button>
+                        <button onClick={handleLogout} className='bg-white w-full px-3 py-1 shadow-inner border border-black' >Logout</button>
                     </div>
                 </section>
             </div>

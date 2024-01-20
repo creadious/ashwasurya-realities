@@ -8,6 +8,7 @@ import Atharva from "../Pages/Atharva/Atharva";
 import Admin from "../Layout/Admin";
 import UserData from "../Pages/AdminPanel/UserData/UserData";
 import AdminLogin from "../Pages/AdminLogin/AdminLogin";
+import PrivateRoute from "./PrivateRoute";
 
 export const router = createBrowserRouter([
     {
@@ -40,7 +41,7 @@ export const router = createBrowserRouter([
     },
     {
         path: '/admin',
-        element: <Admin />,
+        element: <PrivateRoute><Admin /></PrivateRoute>,
         children: [
             {
                 path: 'user-data',
