@@ -2,9 +2,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap');
 
 * {
-    font-family: 'Outfit', sans-serif;
+  font-family: 'Outfit', sans-serif;
 }
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+.user-table:nth-child(odd) {
+  background-color: rgb(231, 231, 231);
+}

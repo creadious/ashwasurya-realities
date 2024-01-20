@@ -4,15 +4,15 @@ import locationImage from '../../assets/project/location.png';
 
 const Facilities = () => {
     return (
-        <section className='py-10 md:px-20 px-6 grid md:grid-cols-2 grid-cols-1 md:gap-20 gap-10'>
+        <section className='py-10 md:px-20 px-6 grid md:grid-cols-2 grid-cols-1 md:gap-20 gap-10 md:text-base text-xs'>
             <div className='px-2'>
-                <h4 className='text-2xl font-semibold'>EDUCATIONAL INSTITUTIONS</h4>
+                <h4 className='md:text-2xl font-semibold'>EDUCATIONAL INSTITUTIONS</h4>
                 <p>
                     The project has prominent institutions (Schools & Colleges)
                     in the neighbourhood.
                 </p>
                 <div className='flex items-center mt-5 justify-center md:flex-row flex-col gap-10'>
-                    <img src={educationImage} alt="" className='w-28 mx-auto' />
+                    <img src={educationImage} alt="" className='md:w-28 w-20 mx-auto' />
                     <ul className='list-disc'>
                         <li> Universal group of Institutions </li>
                         <li> GR International Public School </li>
@@ -28,13 +28,13 @@ const Facilities = () => {
                 </div>
             </div>
             <div className='px-2'>
-                <h4 className='text-2xl font-semibold'>BETTER INFRASTRUCTURE</h4>
+                <h4 className='md:text-2xl font-semibold'>BETTER INFRASTRUCTURE</h4>
                 <p>
                     Very near to upcoming infrastructural developments
                     like SEZs and many more.
                 </p>
                 <div className='flex items-center mt-5 justify-center md:flex-row flex-col gap-10'>
-                    <img src={hospitalImage} alt="" className='w-24 mx-auto' />
+                    <img src={hospitalImage} alt="" className='md:w-24 w-20 mx-auto' />
                     <ul className='list-disc'>
                         <li> 2 minutes away from K.H.B Layout</li>
                         <li> 10 minutes drive to Manchanabele Dam</li>
@@ -49,13 +49,13 @@ const Facilities = () => {
                 </div>
             </div>
             <div className='md:col-span-2 mx-auto px-2'>
-                <h4 className='text-2xl font-semibold'>EDUCATIONAL INSTITUTIONS</h4>
+                <h4 className='md:text-2xl font-semibold'>EDUCATIONAL INSTITUTIONS</h4>
                 <p>
                     The project has prominent institutions (Schools & Colleges)
                     in the neighbourhood.
                 </p>
                 <div className='flex items-center mt-5 justify-center md:flex-row flex-col gap-10'>
-                    <img src={locationImage} alt="" className='w-20 mx-auto' />
+                    <img src={locationImage} alt="" className='md:w-20 w-14 mx-auto' />
                     <ul className='list-disc'>
                         <li>10 minutes drive to Bidadi (Bangalore’s nearestsmart city)</li>
                         <li>Few minutes away to STRR and PRR</li>

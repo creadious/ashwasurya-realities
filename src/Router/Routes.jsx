@@ -5,6 +5,9 @@ import Home from "../Pages/Home/Home";
 import Projects from "../Pages/Projects/Projects";
 import UnderMaintain from "../Pages/UnderMaintain/UnderMaintain";
 import Atharva from "../Pages/Atharva/Atharva";
+import Admin from "../Layout/Admin";
+import UserData from "../Pages/AdminPanel/UserData/UserData";
+import AdminLogin from "../Pages/AdminLogin/AdminLogin";
 
 export const router = createBrowserRouter([
     {
@@ -29,5 +32,21 @@ export const router = createBrowserRouter([
                 element: <Atharva />
             },
         ]
-    }
+    },
+    {
+        path: '/admin/login',
+        element: <AdminLogin />
+
+    },
+    {
+        path: '/admin',
+        element: <Admin />,
+        children: [
+            {
+                path: 'user-data',
+                element: <UserData />
+
+            }
+        ]
+    },
 ])
