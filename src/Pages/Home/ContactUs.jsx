@@ -46,6 +46,7 @@ const ContactUs = () => {
         const sendData = await useFireStore(data)
         if (sendData) {
             toast.success('Send successfully');
+            form.reset();
         }
         else {
             toast.error('Somethings is wrong');

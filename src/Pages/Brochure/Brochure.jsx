@@ -22,8 +22,9 @@ const Brochure = () => {
         const sendData = await useFireStore(data)
         if (sendData) {
             toast.success('Download starting...');
+            form.reset();
             const link = document.createElement('a');
-            link.href = 'https://drive.google.com/file/d/1An0kvM5n7dXX7OQpQa4w-XcyUagw2szP/view?usp=sharing';
+            link.href = 'https://drive.google.com/file/d/1Ep8KRd4Xx0BXU1llhB3RyiAeVMfdBauG/view?usp=sharing';
             link.download = 'brochure.pdf';
             document.body.appendChild(link);
             link.click();
