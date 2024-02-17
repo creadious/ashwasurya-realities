@@ -34,17 +34,14 @@ const Brochure = () => {
     },
   ];
 
-  
   const handleBrochureChange = (e) => {
     const selectedProject = allBrochureLink.find(
       (item) => item.projectName === e.target.value
-      );
-      setBrochure(selectedProject?.link || "");
-    };
-    
-    console.log(brochure)
-    
-    const handleSubmit = async (e) => {
+    );
+    setBrochure(selectedProject?.link || "");
+  };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const form = e.target;
     const name = form.name.value;

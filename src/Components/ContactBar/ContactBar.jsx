@@ -5,7 +5,7 @@ import toast from "react-hot-toast";
 
 const ContactBar = () => {
   const [loading, setLoading] = useState(false);
-
+  const [check, setCheck] = useState(false);
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
@@ -77,9 +77,20 @@ const ContactBar = () => {
           required
           autoComplete="off"
         />
+        <p className="font-extralight">
+          <input
+            onChange={() => setCheck(!check)}
+            checked={check}
+            type="checkbox"
+          />{" "}
+          I Accept all terms & conditions
+        </p>
         <button
           type="submit"
-          className="bg-yellow-500 hover:bg-transparent hover:text-white hover:outline text-black px-10 py-1"
+          className={`bg-yellow-500 ${
+            check && "hover:bg-transparent hover:text-white hover:outline"
+          } text-black px-10 py-1`}
+          disabled={loading || check == false}
         >
           Submit
         </button>
