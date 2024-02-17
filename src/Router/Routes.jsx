@@ -9,6 +9,7 @@ import Admin from "../Layout/Admin";
 import UserData from "../Pages/AdminPanel/UserData/UserData";
 import AdminLogin from "../Pages/AdminLogin/AdminLogin";
 import PrivateRoute from "./PrivateRoute";
+import Keerthi from "../Pages/Keerthi/Keerthi";
 
 export const router = createBrowserRouter([
     {
@@ -31,6 +32,10 @@ export const router = createBrowserRouter([
             {
                 path: '/projects/atharva',
                 element: <Atharva />
+            },
+            {
+                path: '/projects/keerthi',
+                element: <Keerthi />
             },
         ]
     },

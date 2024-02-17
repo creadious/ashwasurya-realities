@@ -11,7 +11,7 @@ const UserData = () => {
 
   const getData = async () => {
     setIsLoading(true);
-    const valueRef = collection(textDB, "userData");
+    const valueRef = collection(textDB, import.meta.env.VITE_FIRESTORE_DOC_NAME);
     const q = query(valueRef, orderBy("createAt", "desc"));
     try {
       const dataDB = await getDocs(q);

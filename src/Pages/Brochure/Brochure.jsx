@@ -21,9 +21,30 @@ const Brochure = () => {
   const [verified, setVerified] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  const [isCaptcha, setsCaptcha] = useState(false);
+  const [brochure, setBrochure] = useState("");
 
-  const handleSubmit = async (e) => {
+  const allBrochureLink = [
+    {
+      projectName: "ATHARVA RITEWAY",
+      link: "https://drive.google.com/file/d/1Ep8KRd4Xx0BXU1llhB3RyiAeVMfdBauG/view?usp=sharing",
+    },
+    {
+      projectName: "APS KEERTHI",
+      link: "",
+    },
+  ];
+
+  
+  const handleBrochureChange = (e) => {
+    const selectedProject = allBrochureLink.find(
+      (item) => item.projectName === e.target.value
+      );
+      setBrochure(selectedProject?.link || "");
+    };
+    
+    console.log(brochure)
+    
+    const handleSubmit = async (e) => {
     e.preventDefault();
     const form = e.target;
     const name = form.name.value;
@@ -108,9 +129,9 @@ const Brochure = () => {
         const sendData = await useFireStore(formDetails);
         if (sendData) {
           toast.success("Download starting...");
+
           const link = document.createElement("a");
-          link.href =
-            "https://drive.google.com/file/d/1Ep8KRd4Xx0BXU1llhB3RyiAeVMfdBauG/view?usp=sharing";
+          link.href = brochure;
           link.download = "brochure.pdf";
           document.body.appendChild(link);
           link.click();
@@ -131,8 +152,7 @@ const Brochure = () => {
       {verified ? (
         <section className="h-full grid place-content-center ">
           <h1 className="md:text-2xl text-sm font-semibold uppercase mt-5 flex justify-center items-center gap-1 bg-slate-100 p-5 rounded-xl shadow-xl">
-            <FcApproval className="md:text-3xl text-xl" /> phone
-            number verified
+            <FcApproval className="md:text-3xl text-xl" /> phone number verified
           </h1>
           {/* <button>Go to home</button> */}
         </section>
@@ -216,28 +236,34 @@ const Brochure = () => {
                     name: "phone",
                     required: true,
                     autoFocus: true,
+                    autoComplete: "off",
                   }}
                   className=" py-1 shadow-2xl border border-black w-full"
-                  required
                 />
                 <select
                   name="project"
                   className="px-3 py-1 shadow-2xl border border-black"
                   required
+                  defaultValue="0"
+                  onChange={handleBrochureChange}
                 >
-                  <option value="" disabled selected>
+                  <option value="0" disabled>
                     --Select your brochure
                   </option>
-                  <option value="ATHARVA RITEWAY">ATHARVA RITEWAY</option>
+                  {allBrochureLink.map((item, index) => (
+                    <option key={index} value={item.projectName}>
+                      {item.projectName}
+                    </option>
+                  ))}
                 </select>
                 <button
-                    type="submit"
-                    disabled={loading}
-                    className="border border-black md:w-40 w-32 mx-auto py-2 hover:bg-black hover:text-white flex items-center justify-center gap-1"
-                  >
-                    {loading && <CgSpinner className="mt-1 animate-spin" />}
-                    Download Now
-                  </button>
+                  type="submit"
+                  disabled={loading}
+                  className="border border-black md:w-40 w-32 mx-auto py-2 hover:bg-black hover:text-white flex items-center justify-center gap-1"
+                >
+                  {loading && <CgSpinner className="mt-1 animate-spin" />}
+                  Download Now
+                </button>
               </form>
             </section>
           )}
