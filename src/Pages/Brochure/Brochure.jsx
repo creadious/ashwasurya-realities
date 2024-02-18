@@ -2,8 +2,9 @@ import { RecaptchaVerifier, signInWithPhoneNumber } from "firebase/auth";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import useFireStore from "../../hooks/useFirestore";
-import { FaPhone } from "react-icons/fa";
+import Swal from "sweetalert2";
 
+import { FaPhone } from "react-icons/fa";
 import { CgSpinner } from "react-icons/cg";
 import { FcApproval } from "react-icons/fc";
 
@@ -46,28 +47,41 @@ const Brochure = () => {
     const form = e.target;
     const name = form.name.value;
     const email = form.email.value;
-    const phone = phn;
+    const phone = form.phone.value;
+    // const phone = phn;
     const projectName = form.project.value;
     const data = { name, email, phone, projectName };
 
+
     setFormDetails(data);
 
-    await onSignUp();
+    // await onSignUp();
 
-    // const sendData = await useFireStore(data);
-    // if (sendData) {
-    //   toast.success("Download starting...");
-    //   form.reset();
-    //   const link = document.createElement("a");
-    //   link.href =
-    //     "https://drive.google.com/file/d/1Ep8KRd4Xx0BXU1llhB3RyiAeVMfdBauG/view?usp=sharing";
-    //   link.download = "brochure.pdf";
-    //   document.body.appendChild(link);
-    //   link.click();
-    //   document.body.removeChild(link);
-    // } else {
-    //   toast.error("Somethings is wrong! please try again.");
-    // }
+    const sendData = await useFireStore(data);
+    // const sendData = null;
+
+    if (sendData) {
+      form.reset();
+      setPhn("");
+      if (brochure === "") {
+        return Swal.fire({
+          title: "Reach you soon!",
+          text: "We will connecting you soon.",
+          icon: "success",
+          confirmButtonText: "close",
+        });
+      }
+
+      toast.success("Download starting...");
+      const link = document.createElement("a");
+      link.href = brochure;
+      link.download = "brochure.pdf";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    } else {
+      toast.error("Somethings is wrong! please try again.");
+    }
   };
 
   const { auth } = useAuth();
@@ -218,14 +232,14 @@ const Brochure = () => {
                   className="px-3 py-1 shadow-2xl border border-black"
                   required
                 />
-                {/* <input
+                <input
                   type="number"
                   name="phone"
                   placeholder="Enter your Contact Number"
                   className="px-3 py-1 shadow-2xl border border-black"
                   required
-                /> */}
-                <PhoneInput
+                />
+                {/* <PhoneInput
                   country={"in"}
                   value={phn}
                   onChange={setPhn}
@@ -233,10 +247,10 @@ const Brochure = () => {
                     name: "phone",
                     required: true,
                     autoFocus: true,
-                    autoComplete: "off",
+                    autoComplete: "",
                   }}
                   className=" py-1 shadow-2xl border border-black w-full"
-                />
+                /> */}
                 <select
                   name="project"
                   className="px-3 py-1 shadow-2xl border border-black"

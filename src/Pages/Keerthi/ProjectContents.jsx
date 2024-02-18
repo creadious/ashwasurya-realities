@@ -21,14 +21,8 @@ const ProjectContents = () => {
         designed landscapes and charming gazebos
       </p>
       <div className="md:mt-16 mt-10">
-        {/* <button
-          onClick={() => setModal(true)}
-          className="md:text-sm text-xs font-semibold hover:bg-[#351116] hover:text-white duration-200 px-4 py-2 md:border-2 border border-[#351116]"
-        >
-          DOWNLOAD BROCHURE
-        </button> */}
         <button
-          onClick={() => toast.error("Brochure not ready.")}
+          onClick={() => setModal(true)}
           className="md:text-sm text-xs font-semibold hover:bg-[#351116] hover:text-white duration-200 px-4 py-2 md:border-2 border border-[#351116]"
         >
           DOWNLOAD BROCHURE
