@@ -14,6 +14,8 @@ import toast from "react-hot-toast";
 import { useState } from "react";
 import useAuth from "../../hooks/useAuth";
 
+import { useNavigate } from "react-router-dom";
+
 const Brochure = () => {
   const [showOtp, setShowOtp] = useState(false);
   const [otp, setOtp] = useState("");
@@ -21,6 +23,8 @@ const Brochure = () => {
   const [formDetails, setFormDetails] = useState({});
   const [verified, setVerified] = useState(false);
   const [loading, setLoading] = useState(false);
+
+  const navigate = useNavigate();
 
   const [brochure, setBrochure] = useState("");
 
@@ -56,7 +60,6 @@ const Brochure = () => {
     const projectName = form.project.value;
     const data = { name, email, phone, projectName };
 
-
     setFormDetails(data);
 
     // await onSignUp();
@@ -68,12 +71,13 @@ const Brochure = () => {
       form.reset();
       setPhn("");
       if (brochure === "") {
-        return Swal.fire({
+        Swal.fire({
           title: "Reach you soon!",
           text: "We will connecting you soon.",
           icon: "success",
           confirmButtonText: "close",
         });
+       return navigate("/thank-you")
       }
 
       toast.success("Download starting...");
