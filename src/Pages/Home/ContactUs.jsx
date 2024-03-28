@@ -1,5 +1,6 @@
 import { useRef, useState } from "react";
 import toast from "react-hot-toast";
+import { ImSpinner6 } from "react-icons/im";
 import emailjs from "@emailjs/browser";
 import useFireStore from "../../hooks/useFirestore";
 
@@ -49,14 +50,17 @@ const ContactUs = () => {
 
     if (phone.length < 10 || phone.length > 10) {
       toast.error("Please enter 10 digit phone number");
+      setLoading(false);
     } else {
       const sendData = await useFireStore(data);
       if (sendData) {
         toast.success("Send successfully");
         form.reset();
-        navigate("/thank-you")
+        navigate("/thank-you");
+        setLoading(false);
       } else {
         toast.error("Somethings is wrong");
+        setLoading(false);
       }
     }
   };
@@ -108,8 +112,9 @@ const ContactUs = () => {
             <button
               type="submit"
               disabled={check == false}
-              className="bg-yellow-500 hover:bg-transparent hover:text-white hover:outline outline-1 text-black px-10 py-1"
+              className="bg-yellow-500 hover:bg-transparent hover:text-white hover:outline outline-1 text-black px-10 py-1 flex items-center gap-1"
             >
+              {loading && <ImSpinner6 className="animate-spin" />}
               Submit
             </button>
           </form>

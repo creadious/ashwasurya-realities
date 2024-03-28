@@ -2,6 +2,7 @@ import { useState } from "react";
 import useFireStore from "../../hooks/useFirestore";
 import { useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
+import { ImSpinner6 } from "react-icons/im";
 
 const ContactBar = () => {
   const [loading, setLoading] = useState(false);
@@ -39,6 +40,7 @@ const ContactBar = () => {
     const phone = form.phone.value;
     if (phone.length < 10 || phone.length > 10) {
       toast.error("Please enter 10 digit phone number");
+      setLoading(false);
     } else {
       const data = { name, email, phone };
 
@@ -46,9 +48,11 @@ const ContactBar = () => {
       if (sendData) {
         toast.success("Send successfully");
         navigate("/thank-you");
+        setLoading(false);
         form.reset();
       } else {
         toast.error("Somethings is wrong");
+        setLoading(false);
       }
     }
   };
@@ -91,11 +95,12 @@ const ContactBar = () => {
         </p>
         <button
           type="submit"
-          className={`bg-yellow-500 ${
+          className={`bg-yellow-500 flex items-center gap-1 ${
             check && "hover:bg-transparent hover:text-white hover:outline"
           } text-black px-10 py-1`}
           disabled={loading || check == false}
         >
+          {loading && <ImSpinner6 className="animate-spin" />}
           Submit
         </button>
       </form>

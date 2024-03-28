@@ -61,9 +61,11 @@ const Brochure = () => {
     const data = { name, email, phone, projectName };
 
     if (phone.length < 10 || phone.length > 10) {
+      setLoading(false);
       return toast.error("Please enter 10 digit phone number");
     }
     if (projectName==0) {
+      setLoading(false);
       return toast.error("Please select any brochure.");
     }
 
@@ -84,6 +86,7 @@ const Brochure = () => {
           icon: "success",
           confirmButtonText: "close",
         });
+        setLoading(false);
         return navigate("/thank-you");
       }
 
@@ -94,8 +97,10 @@ const Brochure = () => {
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
+      setLoading(false);
     } else {
       toast.error("Somethings is wrong! please try again.");
+      setLoading(false);
     }
   };
 
