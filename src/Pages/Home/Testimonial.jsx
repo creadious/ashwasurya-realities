@@ -86,7 +86,7 @@ const Testimonial = () => {
                         return <SwiperSlide key={id}>
                             <div className="relative md:h-52 h-60 bg-slate-200 mt-20 hover:bg-yellow-300 duration-200 cursor-default">
                                 <div className="absolute left-0 -top-16 p-3 px-5 w-full">
-                                    <img src={image || "https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg"} alt="" className="w-20 h-28 object-cover" />
+                                    <img src={image || "https://static.vecteezy.com/system/resources/thumbnails/001/840/612/small/picture-profile-icon-male-icon-human-or-people-sign-and-symbol-free-vector.jpg"} alt="" className="w-20 h-28 object-cover" />
                                     <p className="text-xs mt-2">
                                         {review}
                                     </p>

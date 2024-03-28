@@ -33,6 +33,10 @@ const Brochure = () => {
       projectName: "APS KEERTHI",
       link: "",
     },
+    {
+      projectName: "LOTUS",
+      link: "",
+    },
   ];
 
   const handleBrochureChange = (e) => {

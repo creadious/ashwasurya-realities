@@ -10,49 +10,63 @@ import UserData from "../Pages/AdminPanel/UserData/UserData";
 import AdminLogin from "../Pages/AdminLogin/AdminLogin";
 import PrivateRoute from "./PrivateRoute";
 import Keerthi from "../Pages/Keerthi/Keerthi";
+import Thankyou from "../Pages/Thankyou/Thankyou";
+import AuthProvider from "../provider/AuthProvider";
+import Lotus from "../Pages/Lotus/Lotus";
 
 export const router = createBrowserRouter([
-    {
-        path: '/',
-        element: <Main />,
-        errorElement: <ErrorPage />,
-        children: [
-            {
-                path: '/',
-                element: <Home />
-            },
-            {
-                path: '/projects',
-                element: <Projects />
-            },
-            {
-                path: '/maintenance',
-                element: <UnderMaintain />
-            },
-            {
-                path: '/projects/atharva',
-                element: <Atharva />
-            },
-            {
-                path: '/projects/keerthi',
-                element: <Keerthi />
-            },
-        ]
-    },
-    {
-        path: '/admin/login',
-        element: <AdminLogin />
+  {
+    path: "/",
+    element: <Main />,
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
+      {
+        path: "/projects",
+        element: <Projects />,
+      },
+      {
+        path: "/maintenance",
+        element: <UnderMaintain />,
+      },
+      {
+        path: "/projects/atharva",
+        element: <Atharva />,
+      },
+      {
+        path: "/projects/keerthi",
+        element: <Keerthi />,
+      },
+      {
+        path: "/projects/lotus",
+        element: <Lotus />,
+      },
+    ],
+  },
+  {
+    path: "/admin/login",
 
-    },
-    {
-        path: '/admin',
-        element: <PrivateRoute><Admin /></PrivateRoute>,
-        children: [
-            {
-                path: 'user-data',
-                element: <UserData />
-
-            }
-        ]
-    },
-])
+    element: <AdminLogin />,
+  },
+  {
+    path: "/admin",
+    element: (
+      <PrivateRoute>
+        <Admin />
+      </PrivateRoute>
+    ),
+    children: [
+      {
+        path: "user-data",
+        element: <UserData />,
+      },
+    ],
+  },
+  {
+    path: "/thank-you",
+    element: <Thankyou />,
+  },
+]);

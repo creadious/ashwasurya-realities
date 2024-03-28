@@ -1,11 +1,14 @@
 import { useState } from "react";
 import useFireStore from "../../hooks/useFirestore";
-
+import { useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
 
 const ContactBar = () => {
   const [loading, setLoading] = useState(false);
   const [check, setCheck] = useState(false);
+
+  const navigate = useNavigate();
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
@@ -42,6 +45,7 @@ const ContactBar = () => {
       const sendData = await useFireStore(data);
       if (sendData) {
         toast.success("Send successfully");
+        navigate("/thank-you");
         form.reset();
       } else {
         toast.error("Somethings is wrong");

@@ -1,4 +1,4 @@
-import bannerImageDesk from "../../assets/project/Keerthi/keerrthiDesk.png";
+import bannerImageDesk from "../../assets/project/Keerthi/keerrthiDesk.webp";
 import bannerImageMob from "../../assets/project/Keerthi/keerthiMob.png";
 import logo from "../../assets/logoash.webp";
 import keerthiLogo from "../..//assets/project/Keerthi/bannerImage.webp";

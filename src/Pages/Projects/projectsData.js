@@ -20,7 +20,7 @@ export const projectsOngoing = [
     id: 2,
     title: "RUTHVI",
     image: project2,
-    link: "/projects/ruthvi",
+    link: "/maintenance",
   },
   {
     id: 3,
@@ -31,6 +31,7 @@ export const projectsOngoing = [
     id: 4,
     title: "LOTUS",
     image: project4,
+    link: "/projects/lotus",
   },
   {
     id: 5,

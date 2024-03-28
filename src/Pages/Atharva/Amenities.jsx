@@ -25,7 +25,7 @@ const Amenities = () => {
               className="md:h-14 h-8 object-contain mx-auto"
             />
             <h3 className="md:mt-3 mt-1 md:leading-6 leading-4">
-              24/7 <br /> Security
+              Gated <br /> Community
             </h3>
           </div>
           <div>
@@ -35,7 +35,7 @@ const Amenities = () => {
               className="md:h-14 h-8 object-contain mx-auto"
             />
             <h3 className="md:mt-3 mt-1 md:leading-6 leading-4">
-              Gated <br /> Community
+              24/7 <br /> Security
             </h3>
           </div>
           <div>

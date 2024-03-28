@@ -18,7 +18,7 @@ const OurProjects = () => {
       </h2>
       <div className="grid md:grid-cols-3 grid-cols-2 md:grid-rows-4 md:gap-5 gap-1 md:text-base text-xs">
         <Link
-          to={`/projects/ruthvi`}
+          to={`/maintenance`}
           className="min-h-24 relative col-span-2 overflow-hidden"
         >
           <img
@@ -28,7 +28,7 @@ const OurProjects = () => {
           />
           <div className="absolute text-sm md:bottom-2 md:right-2 bottom-1 right-1">
             <Link
-              to={`/projects/ruthvi`}
+              to={`/maintenance`}
               className="flex items-center gap-1 hover:outline outline-1 hover:bg-white px-2 py-1 md:text-base text-[10px]"
             >
               EXPLORE <BiSolidRightArrow className="text-slate-500" />
@@ -170,7 +170,7 @@ const OurProjects = () => {
           {/* text contents end 4 */}
         </Link>
         <Link
-          to={`/maintenance`}
+          to={`/projects/lotus`}
           className="relative overflow-hidden md:col-span-1 col-span-2"
         >
           <img
@@ -180,7 +180,7 @@ const OurProjects = () => {
           />
           <div className="absolute text-sm md:bottom-2 md:right-2 bottom-1 right-1">
             <Link
-              to={`/maintenance`}
+              to={`/projects/lotus`}
               className="flex items-center gap-1 hover:outline outline-1 text-slate-200 hover:text-black hover:bg-white px-2 py-1 md:text-base text-[10px]"
             >
               EXPLORE <BiSolidRightArrow className="text-slate-200" />
