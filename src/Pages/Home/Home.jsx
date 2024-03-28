@@ -8,17 +8,19 @@ import Gallery from "./Gallery";
 import OurProjects from "./OurProjects";
 import Testimonial from "./Testimonial";
 import WhoWeAre from "./WhoWeAre";
+import VideoBanner from "./VideoBanner";
 
 const Home = () => {
   return (
     <div>
       {/* <Banner /> */}
-      <div>
+      {/* <div>
         <Link to="/projects/keerthi" >
           <KeerthiBanner />
         </Link>
         <ContactBar />
-      </div>
+      </div> */}
+      <VideoBanner/>
       <WhoWeAre />
       <OurProjects />
       <Testimonial />
