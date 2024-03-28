@@ -60,6 +60,13 @@ const Brochure = () => {
     const projectName = form.project.value;
     const data = { name, email, phone, projectName };
 
+    if (phone.length < 10 || phone.length > 10) {
+      return toast.error("Please enter 10 digit phone number");
+    }
+    if (projectName==0) {
+      return toast.error("Please select any brochure.");
+    }
+
     setFormDetails(data);
 
     // await onSignUp();
@@ -77,7 +84,7 @@ const Brochure = () => {
           icon: "success",
           confirmButtonText: "close",
         });
-       return navigate("/thank-you")
+        return navigate("/thank-you");
       }
 
       toast.success("Download starting...");
