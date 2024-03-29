@@ -1,12 +1,11 @@
 import logo from "../../assets/logoash.webp";
 import videoBannerDesk from "../../assets/Video/bannerVideoDesk.mp4";
 import videoBannerMob from "../../assets/Video/bannerVideoMob.mp4";
-import ContactBar from "../../Components/ContactBar/ContactBar";
 
 const VideoBanner = () => {
     const isMobile = () => window.innerWidth <= 767;
   return (
-    <section className="relative h-screen">
+    <section className="relative md:h-screen h-[23rem]">
       {/* Background image */}
       {/* <div
     className="absolute inset-0 bg-cover bg-center z-0"
@@ -32,13 +31,11 @@ const VideoBanner = () => {
           <img
             src={logo}
             alt=""
-            className="md:w-44 w-36 md:mx-0 mx-auto md:mt-0 mt-10"
+            className="md:w-44 w-20"
           />
         </div>
       </div>
-      <div className="md:w-11/12 absolute bottom-4 left-1/2 -translate-x-1/2 z-20">
-        <ContactBar />
-      </div>
+  
     </section>
   );
 };

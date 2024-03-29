@@ -64,7 +64,7 @@ const Brochure = () => {
       setLoading(false);
       return toast.error("Please enter 10 digit phone number");
     }
-    if (projectName==0) {
+    if (projectName == 0) {
       setLoading(false);
       return toast.error("Please select any brochure.");
     }
@@ -87,7 +87,8 @@ const Brochure = () => {
           confirmButtonText: "close",
         });
         setLoading(false);
-        return navigate("/thank-you");
+        // return navigate("/thank-you");
+        return (window.location.href = "/thankyou.html");
       }
 
       toast.success("Download starting...");

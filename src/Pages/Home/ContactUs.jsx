@@ -56,7 +56,8 @@ const ContactUs = () => {
       if (sendData) {
         toast.success("Send successfully");
         form.reset();
-        navigate("/thank-you");
+        // navigate("/thank-you");
+        window.location.href = '/thankyou.html';
         setLoading(false);
       } else {
         toast.error("Somethings is wrong");

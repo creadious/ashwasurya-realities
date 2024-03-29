@@ -47,9 +47,10 @@ const ContactBar = () => {
       const sendData = await useFireStore(data);
       if (sendData) {
         toast.success("Send successfully");
-        navigate("/thank-you");
+        // navigate("/thank-you");
         setLoading(false);
         form.reset();
+        window.location.href = "/thankyou.html";
       } else {
         toast.error("Somethings is wrong");
         setLoading(false);

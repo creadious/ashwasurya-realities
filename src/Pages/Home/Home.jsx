@@ -20,7 +20,12 @@ const Home = () => {
         </Link>
         <ContactBar />
       </div> */}
-      <VideoBanner/>
+      <div>
+        <VideoBanner />
+        <div className="md:w-11/12 md:absolute bottom-4 left-1/2 md:-translate-x-1/2 z-20">
+          <ContactBar />
+        </div>
+      </div>
       <WhoWeAre />
       <OurProjects />
       <Testimonial />
