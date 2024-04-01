@@ -1,7 +1,7 @@
 import { ImCross } from "react-icons/im";
 import { FaLocationDot } from "react-icons/fa6";
 import { useState } from "react";
-import Brochure from "../Brochure/Brochure";
+import Brochure from "../../Brochure/Brochure";
 
 const ProjectContents = () => {
   const [modal, setModal] = useState(false);
@@ -18,7 +18,7 @@ const ProjectContents = () => {
         </p>
       </div>
       <p className="md:w-2/3 mx-auto md:text-base text-xs mt-10">
-        is a BMRDA and RERA Approved A Khata 12Acres Project located at
+        is a BMRDA and RERA Approved A Khata 15Acres Project located at
         Nelamangala, a bustling corridor witnessing significant and rapid
         development. The site's strategic location near key areas represents a
         blend of joy and sustainability, featuring meticulously designed

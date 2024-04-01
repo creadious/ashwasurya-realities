@@ -13,6 +13,7 @@ import Keerthi from "../Pages/Keerthi/Keerthi";
 import Thankyou from "../Pages/Thankyou/Thankyou";
 import AuthProvider from "../provider/AuthProvider";
 import Lotus from "../Pages/Lotus/Lotus";
+import Ruthvi from "../Pages/ProjectPages/Ruthvi/Ruthvi";
 
 export const router = createBrowserRouter([
   {
@@ -43,6 +44,10 @@ export const router = createBrowserRouter([
       {
         path: "/projects/lotus",
         element: <Lotus />,
+      },
+      {
+        path: "/projects/ruthvi",
+        element: <Ruthvi />,
       },
     ],
   },

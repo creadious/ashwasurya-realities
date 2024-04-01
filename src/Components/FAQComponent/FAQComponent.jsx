@@ -11,7 +11,7 @@ const FAQComponent = ({ faqs }) => {
 
     return (
 
-        <>
+        <div className="grid md:grid-cols-2 grid-cols-1 md:gap-x-5" >
             {faqs.map((faq, index) => (
                 <div key={index} className="mb-4">
                     <div
@@ -19,7 +19,7 @@ const FAQComponent = ({ faqs }) => {
                         onClick={() => toggleFAQ(index)}
                     >
                         <div className="flex justify-between items-center gap-2">
-                            <h2 className="md:text-lg text-xs font-semibold">{faq.question}</h2>
+                            <h2 className="md:text-base text-xs font-semibold">{faq.question}</h2>
                             <span className={`${openIndex === index ? 'rotate-180' : 'rotate-0'} duration-300`}><IoIosArrowUp /></span>
                         </div>
                     </div>
@@ -28,7 +28,7 @@ const FAQComponent = ({ faqs }) => {
                     </div>
                 </div>
             ))}
-        </>
+        </div>
     );
 };
 

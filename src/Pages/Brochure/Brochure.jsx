@@ -41,6 +41,10 @@ const Brochure = () => {
       projectName: "LOTUS",
       link: "",
     },
+    {
+      projectName: "RUTHVI",
+      link: "",
+    },
   ];
 
   const handleBrochureChange = (e) => {

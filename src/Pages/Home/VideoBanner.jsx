@@ -2,10 +2,11 @@ import logo from "../../assets/logoash.webp";
 import videoBannerDesk from "../../assets/Video/bannerVideoDesk.mp4";
 import videoBannerMob from "../../assets/Video/bannerVideoMob.mp4";
 
+
 const VideoBanner = () => {
-    const isMobile = () => window.innerWidth <= 767;
+  const isMobile = () => window.innerWidth <= 767;
   return (
-    <section className="relative md:h-screen h-[23rem]">
+    <section className="relative md:h-screen h-[29rem] overflow-hidden">
       {/* Background image */}
       {/* <div
     className="absolute inset-0 bg-cover bg-center z-0"
@@ -14,28 +15,25 @@ const VideoBanner = () => {
    */}
       {/* Video */}
       <video
-        className="absolute inset-0 object-cover w-full h-full z-10"
+        className="absolute inset-0 object-cover object-top w-screen h-full banner-vide"
+        src={isMobile() ? videoBannerMob : videoBannerDesk}
         autoPlay
         loop
         muted
         playsInline
       >
-        <source 
-                 src={isMobile() ? videoBannerMob : videoBannerDesk}type="video/mp4" />
+        {/* <source
+          type="video/mp4"
+        /> */}
       </video>
 
       {/* Content */}
       <div className="relative z-20">
         {/* Your content goes here */}
         <div className="md:py-10 py-2 md:px-14 px-4">
-          <img
-            src={logo}
-            alt=""
-            className="md:w-44 w-20"
-          />
+          <img src={logo} alt="" className="md:w-44 w-20" />
         </div>
       </div>
-  
     </section>
   );
 };

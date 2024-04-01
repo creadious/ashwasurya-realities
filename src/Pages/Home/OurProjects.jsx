@@ -18,7 +18,7 @@ const OurProjects = () => {
       </h2>
       <div className="grid md:grid-cols-3 grid-cols-2 md:grid-rows-4 md:gap-5 gap-1 md:text-base text-xs">
         <Link
-          to={`/maintenance`}
+          to={`/projects/ruthvi`}
           className="min-h-24 relative col-span-2 overflow-hidden"
         >
           <img
@@ -28,7 +28,7 @@ const OurProjects = () => {
           />
           <div className="absolute text-sm md:bottom-2 md:right-2 bottom-1 right-1">
             <Link
-              to={`/maintenance`}
+              to={`/projects/ruthvi`}
               className="flex items-center gap-1 hover:outline outline-1 hover:bg-white px-2 py-1 md:text-base text-[10px]"
             >
               EXPLORE <BiSolidRightArrow className="text-slate-500" />

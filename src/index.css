@@ -39,3 +39,9 @@ input[type=number] {
   box-shadow: 7px 18px 57px -10px rgba(0,0,0,0.75);
 
 }
+
+.banner-video{
+  width: 100vw !important;
+  /* height: 25rem !important; */
+  object-fit: fill !important;
+}

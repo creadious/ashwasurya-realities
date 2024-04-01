@@ -20,12 +20,13 @@ export const projectsOngoing = [
     id: 2,
     title: "RUTHVI",
     image: project2,
-    link: "/maintenance",
+    link: "/projects/ruthvi",
   },
   {
     id: 3,
     title: "ATHARVA RITEWAY",
     image: project3,
+    link: "/projects/atharva",
   },
   {
     id: 4,
