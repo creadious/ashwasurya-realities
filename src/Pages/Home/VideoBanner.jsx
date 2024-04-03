@@ -6,7 +6,7 @@ import videoBannerMob from "../../assets/Video/bannerVideoMob.mp4";
 const VideoBanner = () => {
   const isMobile = () => window.innerWidth <= 767;
   return (
-    <section className="relative md:h-screen h-[29rem] overflow-hidden">
+    <section className="relative md:h-screen h-[25rem] overflow-hidden">
       {/* Background image */}
       {/* <div
     className="absolute inset-0 bg-cover bg-center z-0"
@@ -15,7 +15,7 @@ const VideoBanner = () => {
    */}
       {/* Video */}
       <video
-        className="absolute inset-0 object-cover object-top w-screen h-full banner-vide"
+        className="absolute inset-0 object-cover object-top w-screen h-full banner-video"
         src={isMobile() ? videoBannerMob : videoBannerDesk}
         autoPlay
         loop
