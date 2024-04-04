@@ -11,7 +11,11 @@ import "swiper/css/pagination";
 // import required modules
 import { Pagination, Autoplay } from "swiper/modules";
 import { Link } from "react-router-dom";
-import { projectsCompleted, projectsOngoing, projectsUpcoming } from "./projectsData";
+import {
+  projectsCompleted,
+  projectsOngoing,
+  projectsUpcoming,
+} from "./projectsData";
 import { useState } from "react";
 
 const Projects = () => {
@@ -190,7 +194,7 @@ const Projects = () => {
                 );
               })}
             </Swiper>
-          ) : (
+          ) : projectsUpcoming.length > 0 ? (
             <Swiper
               slidesPerView={1}
               spaceBetween={10}
@@ -249,6 +253,10 @@ const Projects = () => {
                 );
               })}
             </Swiper>
+          ) : (
+            <div>
+              <h1 className="text-black text-center min-h-96">No projects found.</h1>
+            </div>
           )}
         </div>
       </div>

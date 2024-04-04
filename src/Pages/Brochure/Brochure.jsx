@@ -31,19 +31,19 @@ const Brochure = () => {
   const allBrochureLink = [
     {
       projectName: "ATHARVA RITEWAY",
-      link: "https://drive.google.com/file/d/1Ep8KRd4Xx0BXU1llhB3RyiAeVMfdBauG/view?usp=sharing",
+      link: "https://drive.google.com/file/d/108Mm0cpFpJJ4y-KP5b_VrGXY-oNGPWMz/view?usp=drive_link",
     },
     {
       projectName: "APS KEERTHI",
-      link: "",
+      link: "https://drive.google.com/file/d/1vPqfi7PWI5lOyEhuGdiCsr-1EXrNyeks/view?usp=drive_link",
     },
     {
       projectName: "LOTUS",
-      link: "",
+      link: "https://drive.google.com/file/d/1ChOqpWsGs1olJ4EW_KpiJ8EQugSB7yjC/view?usp=drive_link",
     },
     {
       projectName: "RUTHVI",
-      link: "",
+      link: "https://drive.google.com/file/d/1ixerdnuhVzvOtHJbXuKLbLobZYvweiQ8/view?usp=drive_link",
     },
   ];
 
@@ -80,9 +80,12 @@ const Brochure = () => {
     const sendData = await useFireStore(data);
     // const sendData = null;
 
+    console.log("brochure", brochure);
+
     if (sendData) {
       form.reset();
       setPhn("");
+
       if (brochure === "") {
         Swal.fire({
           title: "Reach you soon!",
@@ -165,7 +168,6 @@ const Brochure = () => {
         const sendData = await useFireStore(formDetails);
         if (sendData) {
           toast.success("Download starting...");
-
           const link = document.createElement("a");
           link.href = brochure;
           link.download = "brochure.pdf";

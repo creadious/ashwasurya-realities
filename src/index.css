@@ -41,7 +41,17 @@ input[type=number] {
 }
 
 .banner-video{
-  width: 100vw !important;
-  /* height: 25rem !important; */
-  object-fit: fill !important;
+  /* width: 100vw !important;
+  height: full !important;
+  object-fit: cover !important; */
+}
+
+/* Custom breakpoint */
+@media (min-width: 450px) {
+  /* CSS rules for screens with a minimum width of 450px */
+
+  .banner-video{
+    height: 32rem;
+  }
+
 }

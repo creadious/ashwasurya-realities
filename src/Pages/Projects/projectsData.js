@@ -36,8 +36,9 @@ export const projectsOngoing = [
   },
   {
     id: 5,
-    title: "JYESTA",
-    image: project5,
+    title: "KEERTHI",
+    image: upcoming1,
+    link: "/projects/keerthi",
   },
 ];
 
@@ -57,12 +58,10 @@ export const projectsCompleted = [
     title: "SAI SADGURU PROJECT",
     image: complete3,
   },
-];
-export const projectsUpcoming = [
   {
-    id: 1,
-    title: "KEERTHI",
-    image: upcoming1,
-    link: "/projects/keerthi",
+    id: 4,
+    title: "JYESTA",
+    image: project5,
   },
 ];
+export const projectsUpcoming = [];

@@ -18,7 +18,7 @@ const Amenities = () => {
       </h1>
       <div className="md:my-20 my-10 text-center font-medium md:text-2xl text-xs">
         <div className="grid md:grid-cols-4 grid-cols-2 md:gap-20 gap-8">
-          <div>
+          {/* <div>
             <img
               src={gatedCommunity}
               alt=""
@@ -27,7 +27,7 @@ const Amenities = () => {
             <h3 className="md:mt-3 mt-1 md:leading-6 leading-4">
               Gated <br /> Community
             </h3>
-          </div>
+          </div> */}
           <div>
             <img
               src={Security}
@@ -48,7 +48,7 @@ const Amenities = () => {
               Overhead <br /> tank
             </h3>
           </div>
-          <div>
+          {/* <div>
             <img
               src={enterance}
               alt=""
@@ -57,7 +57,7 @@ const Amenities = () => {
             <h3 className="md:mt-3 mt-1 md:leading-6 leading-4">
               60ft Entrance Road <br /> with Grand Arch
             </h3>
-          </div>
+          </div> */}
           <div>
             <img
               src={blacktopRoads}
@@ -98,8 +98,6 @@ const Amenities = () => {
               Underground <br /> Drainage System
             </h3>
           </div>
-        </div>
-        <div className="md:mt-20 mt-8 grid md:grid-cols-3 grid-cols-2 md:gap-20 gap-8">
           <div>
             <img
               src={parkAndTree}
@@ -121,7 +119,30 @@ const Amenities = () => {
               Area
             </h3>
           </div>
+        </div>
+        <div className="md:mt-20 mt-8 grid md:grid-cols-3 grid-cols-2 md:gap-20 gap-8">
+          {/* <div>
+            <img
+              src={parkAndTree}
+              alt=""
+              className="md:h-14 h-8 object-contain mx-auto"
+            />
+            <h3 className="md:mt-3 mt-1 md:leading-6 leading-4">
+              Park &Tree <br /> Avenues
+            </h3>
+          </div>
           <div>
+            <img
+              src={kidsPlay}
+              alt=""
+              className="md:h-14 h-8 object-contain mx-auto"
+            />
+            <h3 className="md:mt-3 mt-1 md:leading-6 leading-4">
+              Kids Play <br />
+              Area
+            </h3>
+          </div> */}
+          {/* <div>
             <img
               src={undergroundElectric}
               alt=""
@@ -131,7 +152,7 @@ const Amenities = () => {
               Underground <br />
               Electricity
             </h3>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

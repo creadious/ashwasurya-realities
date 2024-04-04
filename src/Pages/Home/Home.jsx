@@ -22,7 +22,7 @@ const Home = () => {
       </div> */}
       <div>
         <VideoBanner />
-        <div className="md:w-11/12 md:absolute bottom-4 left-1/2 md:-translate-x-1/2 z-20">
+        <div className="md:w-11/12 md:absolute bottom-20 left-1/2 md:-translate-x-1/2 z-20">
           <ContactBar />
         </div>
       </div>
