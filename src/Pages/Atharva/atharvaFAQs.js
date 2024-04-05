@@ -5,7 +5,7 @@ export const atharvaFAQs = [
     },
     {
         question: 'How do I get in touch with you?',
-        answer: 'You can reach us at enquiry@ashwasuryarealities.com or call us at 8549964996.',
+        answer: 'You can reach us at enquiry@ashwasuryarealities.com or call us at 8339963996.',
     },
     {
         question: 'Is the Project Ashwasurya Atharva Riteway approved by authorities?',
@@ -41,6 +41,6 @@ export const atharvaFAQs = [
     },
     {
         question: 'How do I visit the project?',
-        answer: 'We provide cab facilities for site visits, or you can visit in your vehicle. For site visits or Pick up, Call Us At 8549964996.',
+        answer: 'We provide cab facilities for site visits, or you can visit in your vehicle. For site visits or Pick up, Call Us At 8339963996.',
     },
 ];

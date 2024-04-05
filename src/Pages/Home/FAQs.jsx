@@ -34,7 +34,7 @@ const FAQs = () => {
         },
         {
             question: 'HOW CAN I GET IN TOUCH WITH ASHWASURYA REALITIES TO INQUIRE ABOUT PLOTS FOR SALE IN BANGALORE?',
-            answer: 'Ans - You can contact Ashwasurya Realities by calling 8549964996 or emailing geethanjali@ashwasuryarealities.com. Alternatively, you can visit their office at No. 836, 3rd Floor, 60ft. Road, BEML 3rd Stage, Rajarajeshwari Nagar, Bangalore – 560098.'
+            answer: 'Ans - You can contact Ashwasurya Realities by calling 8339963996 or emailing geethanjali@ashwasuryarealities.com. Alternatively, you can visit their office at No. 836, 3rd Floor, 60ft. Road, BEML 3rd Stage, Rajarajeshwari Nagar, Bangalore – 560098.'
         },
     ];
 

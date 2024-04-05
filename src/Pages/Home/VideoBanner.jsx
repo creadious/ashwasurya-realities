@@ -2,8 +2,19 @@ import logo from "../../assets/logoash.webp";
 import videoBannerDesk from "../../assets/Video/bannerVideoDesk.mp4";
 import videoBannerMob from "../../assets/Video/bannerVideoMob.mp4";
 
+
+import { FaWhatsapp } from "react-icons/fa";
+import { IoCall } from "react-icons/io5";
+
 const VideoBanner = () => {
+  
+  const phoneNumber = "+918549964996";
+  const whatsappNumber = "919986157030";
+
   const isMobile = () => window.innerWidth <= 767;
+
+
+
   return (
     <section className="relative md:h-screen h-[27rem] banner-video overflow-hidden">
       <video
@@ -23,6 +34,16 @@ const VideoBanner = () => {
           <img src={logo} alt="" className="md:w-44 w-20" />
         </div>
       </div>
+      <div className='text-black text-2xl absolute right-0 top-1/2 -translate-y-1/2'>
+                    <div className='flex flex-col gap-3'>
+                        <a href={`https://wa.me/${whatsappNumber}`} className='bg-white hover:bg-[#e39968] p-3 inline-block'>
+                            <FaWhatsapp />
+                        </a>
+                        <a href={`tel:${phoneNumber}`} className='bg-white hover:bg-[#e39968] p-3 inline-block'>
+                            <IoCall />
+                        </a>
+                    </div>
+                </div>
     </section>
   );
 };
