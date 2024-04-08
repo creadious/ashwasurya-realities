@@ -8,7 +8,7 @@ import { IoCall } from "react-icons/io5";
 
 const VideoBanner = () => {
   
-  const phoneNumber = "++918339963996";
+  const phoneNumber = "+918217267159";
   const whatsappNumber = "919986157030";
 
   const isMobile = () => window.innerWidth <= 767;

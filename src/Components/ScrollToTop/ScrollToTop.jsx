@@ -30,7 +30,7 @@ const ScrollToTop = () => {
       {isVisible && (
         <button
         title="Go to top"
-          className="fixed z-50 text-4xl bottom-5 right-5 bg-white rounded-full"
+          className="fixed z-50 text-4xl bottom-5 left-5 bg-white rounded-full"
           onClick={scrollToTop}
         >
           <IoIosArrowDropupCircle />
