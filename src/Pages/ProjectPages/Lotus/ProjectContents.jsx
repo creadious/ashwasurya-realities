@@ -1,7 +1,7 @@
 import { ImCross } from "react-icons/im";
 import { FaLocationDot } from "react-icons/fa6";
-import Brochure from "../Brochure/Brochure";
 import { useState } from "react";
+import Brochure from "../../Brochure/Brochure";
 
 const ProjectContents = () => {
   const [modal, setModal] = useState(false);
@@ -10,19 +10,19 @@ const ProjectContents = () => {
       <div className="font-bold">
         <h4 className="md:text-2xl">ASHWASURYA</h4>
         <h2 className="md:text-4xl text-2xl border-b-2 px-2 inline-block border-black">
-          ATHARVA RITEWAY
+          LOTUS
         </h2>
         <p className="flex items-center justify-center gap-2 mt-3 md:text-lg text-sm">
           <FaLocationDot className="text-red-600" />
-          <span>OFF MYSORE ROAD</span>
+          <span>NELAMANGALA</span>
         </p>
       </div>
       <p className="md:w-2/3 mx-auto md:text-base text-xs mt-10">
-        is a BMICAPA and RERA Approved A Khata 20Acres Project located off
-        Mysore Road, a bustling corridor witnessing significant and rapid
+        is a BMRDA and RERA Approved A Khata 12Acres Project located at
+        Nelamangala, a bustling corridor witnessing significant and rapid
         development. The site's strategic location near key areas represents a
         blend of joy and sustainability, featuring meticulously designed
-        landscapes and charming gazebos
+        landscapes and charming gazebos.
       </p>
       <div className="md:mt-16 mt-10">
         <button

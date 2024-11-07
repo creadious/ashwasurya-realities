@@ -1,6 +1,6 @@
-import educationImage from "../../assets/project/Keerthi/education.png";
-import hospitalImage from "../../assets/project/Keerthi/health.png";
-import locationImage from "../../assets/project/Keerthi/location.png";
+import educationImage from "../../../assets/project/Keerthi/education.png";
+import hospitalImage from "../../../assets/project/Keerthi/health.png";
+import locationImage from "../../../assets/project/Keerthi/location.png";
 
 const Facilities = () => {
   return (

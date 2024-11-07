@@ -1,10 +1,10 @@
 import React from "react";
 import LotusBanner from "./LotusBanner";
 import ProjectContents from "./ProjectContents";
-import ContactUs from "../Home/ContactUs";
+import ContactUs from "../../Home/ContactUs";
 import Amenities from "./Amenities";
 import Facilities from "./Facilities";
-import FAQComponent from "../../Components/FAQComponent/FAQComponent";
+import FAQComponent from "../../../Components/FAQComponent/FAQComponent";
 import { lotusFAQs } from "./lotusFAQs";
 
 const Lotus = () => {

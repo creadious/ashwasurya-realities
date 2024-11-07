@@ -1,12 +1,12 @@
-import bannerImageDesk from "../../assets/project/Keerthi/keerrthiDesk.webp";
-import bannerImageMob from "../../assets/project/Keerthi/keerthiMob.png";
-import logo from "../../assets/logoash.webp";
-import keerthiLogo from "../..//assets/project/Keerthi/bannerImage.webp";
+import bannerImageDesk from "../../../assets/project/Keerthi/keerrthiDesk.webp";
+// import bannerImageMob from "../../../assets/project/Keerthi/keerthiMob.png";
+import logo from "../../../assets/logoash.webp";
+import keerthiLogo from "../../../assets/project/Keerthi/bannerImage.webp";
 import { Link } from "react-router-dom";
 import { FaLocationDot } from "react-icons/fa6";
 
 const KeerthiBanner = () => {
-  const isMobile = () => window.innerWidth <= 767;
+  // const isMobile = () => window.innerWidth <= 767;
 
   return (
     <section className="md:h-[40rem] h-[32rem] relative">

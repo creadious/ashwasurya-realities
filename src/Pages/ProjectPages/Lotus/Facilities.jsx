@@ -1,8 +1,8 @@
-import icon1 from "../../assets/project/Lotus/icon 1.webp";
-import icon2 from "../../assets/project/Lotus/icon 2.webp";
-import icon3 from "../../assets/project/Lotus/icon 3.webp";
-import icon4 from "../../assets/project/Lotus/icon 4.webp";
-import icon5 from "../../assets/project/Lotus/icon 5.webp";
+import icon1 from "../../../assets/project/Lotus/icon 1.webp";
+import icon2 from "../../../assets/project/Lotus/icon 2.webp";
+import icon3 from "../../../assets/project/Lotus/icon 3.webp";
+import icon4 from "../../../assets/project/Lotus/icon 4.webp";
+import icon5 from "../../../assets/project/Lotus/icon 5.webp";
 
 const Facilities = () => {
   return (

@@ -1,14 +1,15 @@
-import gatedCommunity from "../../assets/project/Lotus/ame 1.webp";
-import Security from "../../assets/project/Lotus/ame 2.webp";
-import overtank from "../../assets/project/Lotus/ame 3.webp";
-import enterance from "../../assets/project/Lotus/ame 4.webp";
-import blacktopRoads from "../../assets/project/Lotus/ame 5.webp";
-import rainWater from "../../assets/project/Lotus/ame 6.webp";
-import sewage from "../../assets/project/Lotus/ame 7.webp";
-import underground from "../../assets/project/Lotus/ame 8.webp";
-import parkAndTree from "../../assets/project/Lotus/ame 9.webp";
-import kidsPlay from "../../assets/project/Lotus/ame 10.webp";
-import undergroundElectric from "../../assets/project/Lotus/ame 11.webp";
+import gatedCommunity from "../../../assets/project/gated-community.png";
+import Security from "../../../assets/project/24-7-security.png";
+import overtank from "../../../assets/project/overhead-tank.png";
+import enterance from "../../../assets/project/entrance.png";
+import blacktopRoads from "../../../assets/project/blacktopRoads.png";
+import rainWater from "../../../assets/project/rain-water.png";
+import sewage from "../../../assets/project/sewage-system.png";
+import underground from "../../../assets/project/underground.png";
+import parkAndTree from "../../../assets/project/park-and-tree.png";
+import kidsPlay from "../../../assets/project/kids-play.png";
+import undergroundElectric from "../../../assets/project/underground-electric.png";
+
 
 const Amenities = () => {
   return (

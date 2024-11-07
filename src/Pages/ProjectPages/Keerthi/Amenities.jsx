@@ -1,14 +1,14 @@
-import gatedCommunity from "../../assets/project/Keerthi/i1.png";
-import Security from "../../assets/project/Keerthi/i2.png";
-import overtank from "../../assets/project/Keerthi/i3.png";
-import enterance from "../../assets/project/Keerthi/i4.png";
-import blacktopRoads from "../../assets/project/Keerthi/i5.png";
-import rainWater from "../../assets/project/Keerthi/i6.png";
-import sewage from "../../assets/project/Keerthi/i7.png";
-import underground from "../../assets/project/Keerthi/i8.png";
-import parkAndTree from "../../assets/project/Keerthi/i9.png";
-import kidsPlay from "../../assets/project/Keerthi/i10.png";
-import undergroundElectric from "../../assets/project/Keerthi/i11.png";
+import gatedCommunity from "../../../assets/project/Keerthi/i1.png";
+import Security from "../../../assets/project/Keerthi/i2.png";
+import overtank from "../../../assets/project/Keerthi/i3.png";
+import enterance from "../../../assets/project/Keerthi/i4.png";
+import blacktopRoads from "../../../assets/project/Keerthi/i5.png";
+import rainWater from "../../../assets/project/Keerthi/i6.png";
+import sewage from "../../../assets/project/Keerthi/i7.png";
+import underground from "../../../assets/project/Keerthi/i8.png";
+import parkAndTree from "../../../assets/project/Keerthi/i9.png";
+import kidsPlay from "../../../assets/project/Keerthi/i10.png";
+import undergroundElectric from "../../../assets/project/Keerthi/i11.png";
 
 const Amenities = () => {
   return (

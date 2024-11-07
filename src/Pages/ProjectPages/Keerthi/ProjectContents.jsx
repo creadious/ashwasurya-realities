@@ -1,10 +1,10 @@
 import { ImCross } from "react-icons/im";
 import { FaLocationDot } from "react-icons/fa6";
-import Brochure from "../Brochure/Brochure";
+import Brochure from "../../Brochure/Brochure";
 import { useState } from "react";
 import toast from "react-hot-toast";
 
-import keerthiLogo from "../../assets/project/Keerthi/logo.png";
+import keerthiLogo from "../../../assets/project/Keerthi/logo.png";
 
 const ProjectContents = () => {
   const [modal, setModal] = useState(false);

@@ -8,7 +8,8 @@ import complete1 from "../../assets/complete1.webp";
 import complete2 from "../../assets/complete2.webp";
 import complete3 from "../../assets/complete3.webp";
 
-import upcoming1 from "../../assets/upcoming1.png";
+import complete4 from "../../assets/upcoming1.png";
+import complete5 from "../../assets/project/Lavish/mob web.webp";
 
 export const projectsOngoing = [
   {
@@ -37,8 +38,14 @@ export const projectsOngoing = [
   {
     id: 5,
     title: "KEERTHI",
-    image: upcoming1,
+    image: complete4,
     link: "/projects/keerthi",
+  },
+  {
+    id: 6,
+    title: "LAVISH",
+    image: complete5,
+    link: "/projects/lavish",
   },
 ];
 

@@ -17,10 +17,12 @@ const Footer = () => {
         <div className="text-gray-400">
           <h4 className="mb-3">CONTACT INFO</h4>
           <p>+91 8339963996</p>
-          <p className="sm:text-base text-xs">geethanjali@ashwasuryarealities.com</p>
-          {/* <Link to="/admin/login" className='text-xs underline'>
-                        Admin
-                    </Link> */}
+          <p className="sm:text-base text-xs">
+            geethanjali@ashwasuryarealities.com
+          </p>
+          {/* <Link to="/admin/login" className="text-xs underline inline-block mt-5 hover:text-blue-600">
+            Admin
+          </Link> */}
         </div>
         <div className="flex gap-8 items-center">
           <a

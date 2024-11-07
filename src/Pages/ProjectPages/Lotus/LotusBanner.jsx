@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import bannerImageDesk from "../../assets/project/Lotus/back destop.webp";
-import bannerImageMob from "../../assets/project/Lotus/back mob.webp";
-import logo from "../../assets/logoash.webp";
+import bannerImageDesk from "../../../assets/project/Lotus/back destop.webp";
+import bannerImageMob from "../../../assets/project/Lotus/back mob.webp";
+import logo from "../../../assets/logoash.webp";
 import { FaLocationDot } from "react-icons/fa6";
 
 const LotusBanner = () => {

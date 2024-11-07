@@ -1,6 +1,6 @@
-import educationImage from "../../assets/project/education.png";
-import hospitalImage from "../../assets/project/hospital.png";
-import locationImage from "../../assets/project/location.png";
+import educationImage from "../../../assets/project/education.png";
+import hospitalImage from "../../../assets/project/hospital.png";
+import locationImage from "../../../assets/project/location.png";
 
 const Facilities = () => {
   return (
