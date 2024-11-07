@@ -41,12 +41,6 @@ export const projectsOngoing = [
     image: complete4,
     link: "/projects/keerthi",
   },
-  {
-    id: 6,
-    title: "LAVISH",
-    image: complete5,
-    link: "/projects/lavish",
-  },
 ];
 
 export const projectsCompleted = [
@@ -71,4 +65,11 @@ export const projectsCompleted = [
     image: project5,
   },
 ];
-export const projectsUpcoming = [];
+export const projectsUpcoming = [
+  {
+    id: 1,
+    title: "LAVISH",
+    image: complete5,
+    link: "/projects/lavish",
+  },
+];

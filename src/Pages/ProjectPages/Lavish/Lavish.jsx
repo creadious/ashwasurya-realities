@@ -12,7 +12,7 @@ const Lavish = () => {
     <div className="text-[#351116]">
       <LavishBanner />
       <ProjectContents />
-      <Facilities />
+      {/* <Facilities /> */}
       <Amenities />
       <ContactUs />
       <ProjectsFAQs faqs={lavishFAQs} />
