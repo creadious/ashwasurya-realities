@@ -11,17 +11,22 @@ import kidsPlay from "../../../assets/project/Keerthi/i10.png";
 import undergroundElectric from "../../../assets/project/Keerthi/i11.png";
 import { useState } from "react";
 
-import facilitiesImage from "../../../assets/project/Lavish/levish-1.webp";
+import educationImage from "../../../assets/project/Keerthi/education.png";
+import hospitalImage from "../../../assets/project/Keerthi/health.png";
+import locationImage from "../../../assets/project/Keerthi/location.png";
 
 const Amenities = () => {
   const [selectedTab, setSelectedTab] = useState(1);
 
   return (
-    <section className="md:py-20 md:px-20 px-2 py-10">
+    <section className=" md:px-20 px-2 py-14">
+      <h2 className="md:text-5xl text-3xl md:mb-10 mb-5 md:text-left text-center">
+        FACILITIES
+      </h2>
       <div className="grid md:grid-cols-2 grid-cols-1 gap-10">
         <div className="h-full">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.8378966787077!2d77.51803467479296!3d12.91813821604875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3f8e148034c7%3A0xbdd59f800d23460c!2sAshwasurya%20Realities%20India%20Private%20Limited!5e0!3m2!1sen!2sin!4v1705068559995!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3517.1148700151766!2d77.3533429!3d13.065024799999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae2f002e3d34af%3A0x8ecb6b8d2c90b44c!2sJD%20Ashwasurya%20Lavish!5e1!3m2!1sen!2sin!4v1731149902917!5m2!1sen!2sin"
             className="w-full md:h-full h-60"
             loading="lazy"
           ></iframe>
@@ -59,7 +64,7 @@ const Amenities = () => {
               RERA
             </button>
           </div>
-          <div className="mt-5 h-96 border border-rose-950 grid place-content-center">
+          <div className="mt-5 min-h-96 border border-rose-950 grid place-content-center">
             {selectedTab === 1 ? (
               <div className="grid grid-cols-4 gap-y-10 p-5 py-10 items-center">
                 <div>
@@ -170,12 +175,82 @@ const Amenities = () => {
                 RERA No.: PRM/KA/RERA/1250/307/PR/071124/007208
               </div>
             ) : selectedTab === 3 ? (
-              <div className="h-full">
-                <img
-                  src={facilitiesImage}
-                  alt="image"
-                  className="h-full w-full object-contain"
-                />
+              <div className="grid md:grid-cols-2 grid-cols-1 p-4 gap-2">
+                <div className="">
+                  <h4 className="md:text-base font-semibold">
+                    EXCELLENT CONNECTIVITY
+                  </h4>
+                  <p className="text-xs">
+                    A second airport is being proposed near Nelamangala-Kunigal
+                    Road, which could transform the area into a hub for
+                    Employment, tourism and commerce.
+                  </p>
+                  <div className="mt-2 grid grid-cols-2 gap-5">
+                    <div className="grid place-items-center">
+                      <img
+                        src={locationImage}
+                        alt=""
+                        className="w-10 mx-auto"
+                      />
+                    </div>
+                    <ul className="list-disc text-xs">
+                      <li>ATTACHED TO NH-75</li>
+                      <li>4KMS TO NELAMANGALA JUNCTION</li>
+                      <li>5KMS TO THE UPCOMING NELAMANGALA METRO STATION</li>
+                      <li>Nearest to UPCOMING KWIN CITY</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div>
+                  <h4 className="md:text-base font-semibold uppercase">
+                    School & College
+                  </h4>
+                  <p className="text-xs">
+                    The project has prominent institutions (Schools & Colleges)
+                    in the neighbourhood.
+                  </p>
+                  <div className="mt-2 grid grid-cols-2 gap-5">
+                    <div className="grid place-items-center">
+                      <img
+                        src={educationImage}
+                        alt=""
+                        className="w-14 mx-auto"
+                      />
+                    </div>
+                    <ul className="list-disc text-xs">
+                      <li>Nexgen Pu College. </li>
+                      <li> Narayana Residential Pu College. </li>
+                      <li>Josco Institutions. </li>
+                      <li> Ranebennur College Of Nursing. </li>
+                      <li> Bangalore Education Guide Line Pvt Ltd. </li>
+                      <li>Harsha International Institutions. </li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="md:col-span-2 md:grid md:place-items-center mt-2">
+                  <div className="">
+                    <h4 className="md:text-base font-semibold uppercase">
+                      Nearby Hospital
+                    </h4>
+                    <p className="text-xs">Very near to many hospitals.</p>
+                    <div className="mt-2 grid grid-cols-2 md:gap-0 gap-5">
+                    <div className="grid place-items-center">
+                      <img
+                        src={hospitalImage}
+                        alt=""
+                        className="w-10 mx-auto"
+                      />
+                    </div>
+                      <ul className="list-disc text-xs">
+                        <li>Harsha Hospital 5kms</li>
+                        <li> VP Magnus Hospital 6kms</li>
+                        <li> Mathrushree Hospital 5kms</li>
+                        <li>Amrutha Super Speciality Hospital</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
               </div>
             ) : (
               <div></div>
