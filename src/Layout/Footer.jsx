@@ -10,8 +10,10 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="md:px-20 px-4 py-10 bg-black text-white">
-      <img src={image} alt="" className="md:w-72 w-28" />
+    <footer className="md:px-20 px-4 py-10 bg-black text-white relative md:pt-24 md:mt-32 mt-16">
+      <div className="absolute md:-top-28 -top-16">
+        <img src={image} alt="" className="md:w-64 w-40" />
+      </div>
 
       <div className="mt-20 flex md:items-end gap-10 justify-between md:flex-row flex-col">
         <div className="text-gray-400">
