@@ -215,7 +215,7 @@ const Amenities = () => {
                       <img
                         src={educationImage}
                         alt=""
-                        className="w-14 mx-auto"
+                        className="w-16 mx-auto"
                       />
                     </div>
                     <ul className="list-disc text-xs">
@@ -229,7 +229,7 @@ const Amenities = () => {
                   </div>
                 </div>
                 <div className="md:col-span-2 md:grid md:place-items-center mt-2">
-                  <div className="">
+                  <div className="md:w-80">
                     <h4 className="md:text-base font-semibold uppercase">
                       Nearby Hospital
                     </h4>
