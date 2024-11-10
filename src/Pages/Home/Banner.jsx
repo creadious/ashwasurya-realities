@@ -18,7 +18,7 @@ const Banner = () => {
   return (
     <section>
       <div
-        className="xl:h-[50rem] lg:h-[35rem] sm:h-[37rem] h-[25rem] bg-cover relative bg-center"
+        className="xl:h-[47rem] lg:h-[35rem] h-[35rem] bg-cover relative bg-center"
         style={{ backgroundImage: `url(${isMobile() ? mobView : deskView})` }}
       >
         <div className="md:py-10 py-2 md:px-14 px-4">
@@ -37,13 +37,13 @@ const Banner = () => {
           <div className="flex flex-col gap-3">
             <a
               href={`https://wa.me/${whatsappNumber}`}
-              className="bg-[#985527] hover:bg-[#e39968] p-3 inline-block"
+              className="bg-yellow-500 hover:bg-[#e39968] p-3 inline-block"
             >
               <FaWhatsapp />
             </a>
             <a
               href={`tel:${phoneNumber}`}
-              className="bg-[#985527] hover:bg-[#e39968] p-3 inline-block"
+              className="bg-yellow-500 hover:bg-[#e39968] p-3 inline-block"
             >
               <IoCall />
             </a>

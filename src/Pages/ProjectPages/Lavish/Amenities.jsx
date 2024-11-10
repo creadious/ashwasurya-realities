@@ -171,7 +171,7 @@ const Amenities = () => {
                 </div>
               </div>
             ) : selectedTab === 2 ? (
-              <div className="h-full grid place-content-center text-center">
+              <div className="h-full grid place-content-center text-center md:text-base text-xs p-2">
                 RERA No.: PRM/KA/RERA/1250/307/PR/071124/007208
               </div>
             ) : selectedTab === 3 ? (

@@ -13,11 +13,14 @@ const ProjectContents = () => {
         <img src={lavishLogo} alt="logo" className="mx-auto w-48" />
       </div>
       <p className="md:w-2/3 mx-auto md:text-base text-xs mt-10">
-        is a BMRDA and RERA Approved A Khata 8Acres Project adjacent to Hassan
-        NH off Nelamangala, a bustling corridor witnessing significant and rapid
-        development. The site's strategic location near key areas represents a
-        blend of joy and sustainability, featuring meticulously designed
-        landscapes and charming gazebos
+        This BMRDA and RERA-approved A-Khata project spans 9 acres and is
+        located adjacent to the Hassan NH 75, just off Nelamangala—a thriving
+        corridor of rapid growth and development. Its prime location near
+        significant areas offers the perfect balance of convenience and
+        tranquility. Designed with sustainability in mind, the project features
+        beautifully landscaped gardens and charming gazebos, creating a
+        delightful setting for families. It’s a place where joy, modern
+        amenities, and nature come together in seamless harmony.
       </p>
       <div className="md:mt-16 mt-10">
         <button

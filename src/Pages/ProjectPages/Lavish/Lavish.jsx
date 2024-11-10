@@ -9,7 +9,7 @@ import { lavishFAQs } from "./lavishFAQs";
 
 const Lavish = () => {
   return (
-    <div className="text-[#351116]">
+    <div className="text-[#351116] bg-[#fffafa] ">
       <LavishBanner />
       <ProjectContents />
       {/* <Facilities /> */}

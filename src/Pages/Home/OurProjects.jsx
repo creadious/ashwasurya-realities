@@ -103,7 +103,7 @@ const OurProjects = () => {
               to={`/projects/lavish`}
               className="flex items-center gap-1 hover:outline outline-1 text-white hover:text-black hover:bg-white px-2 py-1 md:text-base text-[10px]"
             >
-              EXPLORE <BiSolidRightArrow className="text-slate-300" />
+              EXPLORE <BiSolidRightArrow className="text-slate-500" />
             </Link>
           </div>
 
@@ -183,7 +183,7 @@ const OurProjects = () => {
               to={`/projects/lotus`}
               className="flex items-center gap-1 hover:outline outline-1 text-slate-200 hover:text-black hover:bg-white px-2 py-1 md:text-base text-[10px]"
             >
-              EXPLORE <BiSolidRightArrow className="text-slate-200" />
+              EXPLORE <BiSolidRightArrow className="text-slate-400" />
             </Link>
           </div>
           {/* text contents start 5 */}
