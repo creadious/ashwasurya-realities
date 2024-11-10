@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import ContactBar from "../../Components/ContactBar/ContactBar";
 import KeerthiBanner from "../ProjectPages/Keerthi/KeerthiBanner";
+import LavishBanner from "../ProjectPages/Lavish/LavishBanner";
 import Banner from "./Banner";
 import ContactUs from "./ContactUs";
 import FAQs from "./FAQs";
@@ -13,15 +14,15 @@ import VideoBanner from "./VideoBanner";
 const Home = () => {
   return (
     <div>
-      {/* <Banner /> */}
+      <Banner />
       {/* <div>
         <Link to="/projects/keerthi" >
-          <KeerthiBanner />
+          <LavishBanner/>
         </Link>
         <ContactBar />
       </div> */}
       <div>
-        <VideoBanner />
+        {/* <VideoBanner /> */}
         <div className="md:w-11/12 md:absolute bottom-20 left-1/2 md:-translate-x-1/2 z-20">
           <ContactBar />
         </div>

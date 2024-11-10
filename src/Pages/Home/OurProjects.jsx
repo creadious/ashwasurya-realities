@@ -4,7 +4,7 @@ import { FaLocationDot } from "react-icons/fa6";
 
 import image1 from "../../assets/ruthvi.webp";
 import image2 from "../../assets/destiny.webp";
-import image3 from "../../assets/keerthi.webp";
+import image3 from "../../assets/project/Lavish/lavish-poster.webp";
 import image4 from "../../assets/atharva.webp";
 import image5 from "../../assets/lotus.webp";
 
@@ -90,17 +90,17 @@ const OurProjects = () => {
           {/* text contents end 2 */}
         </Link>
         <Link
-          to={`/projects/keerthi`}
+          to={`/projects/lavish`}
           className="relative md:row-span-2 overflow-hidden"
         >
           <img
             src={image3}
-            alt=""
+            alt="lavish"
             className="w-full h-full hover:scale-105 duration-200 object-cover"
           />
           <div className="absolute text-sm md:bottom-2 md:right-2 bottom-0 right-0">
             <Link
-              to={`/projects/keerthi`}
+              to={`/projects/lavish`}
               className="flex items-center gap-1 hover:outline outline-1 text-white hover:text-black hover:bg-white px-2 py-1 md:text-base text-[10px]"
             >
               EXPLORE <BiSolidRightArrow className="text-slate-300" />
@@ -119,9 +119,9 @@ const OurProjects = () => {
                                 KANAKAPURA
                             </span>
                         </div> */}
-            <img src={keerthiLogo} alt="logo" className="md:w-36 w-12" />
+            {/* <img src={keerthiLogo} alt="logo" className="md:w-36 w-12" /> */}
           </div>
-          <div className="absolute md:bottom-20 bottom-5 md:left-5 left-2 text-white md:block">
+          {/* <div className="absolute md:bottom-20 bottom-5 md:left-5 left-2 text-white md:block">
             <h2 className="md:text-2xl text-[10px] font-bold md:leading-5 leading-0">
               <p className="md:text-xl text-nowrap">PRELAUNCHING</p> <br />
               <p className="md:text-4xl text-sm md:-my-7 -my-5 text-nowrap">LUXURY PLOTS</p> <br />
@@ -129,7 +129,7 @@ const OurProjects = () => {
                 OFF MYSURU ROAD
               </p>
             </h2>
-          </div>
+          </div> */}
           {/* text contents end 3 */}
         </Link>
         <Link

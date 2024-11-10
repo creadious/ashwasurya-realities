@@ -14,8 +14,9 @@ import complete5 from "../../assets/project/Lavish/mob web.webp";
 export const projectsOngoing = [
   {
     id: 1,
-    title: "DESTINY FARM",
-    image: project1,
+    title: "ATHARVA RITEWAY",
+    image: project3,
+    link: "/projects/atharva",
   },
   {
     id: 2,
@@ -25,44 +26,43 @@ export const projectsOngoing = [
   },
   {
     id: 3,
-    title: "ATHARVA RITEWAY",
-    image: project3,
-    link: "/projects/atharva",
-  },
-  {
-    id: 4,
     title: "LOTUS",
     image: project4,
     link: "/projects/lotus",
   },
   {
-    id: 5,
-    title: "KEERTHI",
-    image: complete4,
-    link: "/projects/keerthi",
+    id: 4,
+    title: "DESTINY FARM",
+    image: project1,
   },
 ];
 
 export const projectsCompleted = [
   {
     id: 1,
+    title: "KEERTHI",
+    image: complete4,
+    link: "/projects/keerthi",
+  },
+  {
+    id: 2,
+    title: "JYESTA",
+    image: project5,
+  },
+  {
+    id: 3,
     title: "BERYLE PHASE-1",
     image: complete1,
   },
   {
-    id: 2,
+    id: 4,
     title: "GREEN VALLEY",
     image: complete2,
   },
   {
-    id: 3,
+    id: 5,
     title: "SAI SADGURU PROJECT",
     image: complete3,
-  },
-  {
-    id: 4,
-    title: "JYESTA",
-    image: project5,
   },
 ];
 export const projectsUpcoming = [

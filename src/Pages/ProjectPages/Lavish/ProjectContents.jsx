@@ -3,14 +3,14 @@ import { ImCross } from "react-icons/im";
 import Brochure from "../../Brochure/Brochure";
 import { useState } from "react";
 
-import keerthiLogo from "../../../assets/project/Lavish/Untitled-1.png";
+import lavishLogo from "../../../assets/project/Lavish/Untitled-1.png";
 
 const ProjectContents = () => {
   const [modal, setModal] = useState(false);
   return (
     <section className="md:py-20 py-10 md:px-20 px-4 text-center">
       <div className="font-bold">
-        <img src={keerthiLogo} alt="logo" className="mx-auto w-48" />
+        <img src={lavishLogo} alt="logo" className="mx-auto w-48" />
       </div>
       <p className="md:w-2/3 mx-auto md:text-base text-xs mt-10">
         is a BMRDA and RERA Approved A Khata 8Acres Project adjacent to Hassan
