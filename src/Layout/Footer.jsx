@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+
 import image from "../assets/logoash.webp";
 
 import {
@@ -7,6 +7,7 @@ import {
   FaLinkedin,
   FaYoutube,
 } from "react-icons/fa";
+import { phoneNumber } from "../Containts/Numbers";
 
 const Footer = () => {
   return (
@@ -18,7 +19,7 @@ const Footer = () => {
       <div className="mt-20 flex md:items-end gap-10 justify-between md:flex-row flex-col">
         <div className="text-gray-400">
           <h4 className="mb-3">CONTACT INFO</h4>
-          <p>+91 8339963996</p>
+          <p>+91 {phoneNumber}</p>
           <p className="sm:text-base text-xs">
             geethanjali@ashwasuryarealities.com
           </p>
@@ -30,6 +31,7 @@ const Footer = () => {
           <a
             href="https://www.facebook.com/AshwasuryaRealitiesCompany/"
             target="_blank"
+            rel="noreferrer"
             title="Facebook"
             className="w-10 h-10 rounded-full bg-white grid place-content-center text-3xl overflow-hidden"
           >
@@ -38,6 +40,7 @@ const Footer = () => {
           <a
             href="https://linkedin.com/company/ashwasurya-realities-company"
             target="_blank"
+            rel="noreferrer"
             title="Linkedin"
             className="w-10 h-10 rounded-full bg-white grid place-content-center text-3xl overflow-hidden"
           >
@@ -46,6 +49,7 @@ const Footer = () => {
           <a
             href="https://www.youtube.com/@ashwasuryarealities3542"
             target="_blank"
+            rel="noreferrer"
             title="Youtube"
             className="w-10 h-10 rounded-full bg-white grid place-content-center text-3xl overflow-hidden"
           >
@@ -54,6 +58,7 @@ const Footer = () => {
           <a
             href="https://www.instagram.com/ashwasurya_realities/"
             target="_blank"
+            rel="noreferrer"
             title="Instagram"
             className="w-10 h-10 rounded-full bg-white grid place-content-center text-3xl overflow-hidden"
           >

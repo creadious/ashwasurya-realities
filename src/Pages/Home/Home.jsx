@@ -14,7 +14,7 @@ import VideoBanner from "./VideoBanner";
 const Home = () => {
   return (
     <div>
-      <Banner />
+      {/* <Banner /> */}
       {/* <div>
         <Link to="/projects/keerthi" >
           <LavishBanner/>
@@ -22,10 +22,10 @@ const Home = () => {
         <ContactBar />
       </div> */}
       <div>
-        {/* <VideoBanner /> */}
-        <div className="md:w-11/12 md:absolute bottom-0 left-1/2 md:-translate-x-1/2 z-20">
+        <VideoBanner />
+         <div className="md:w-11/12 md:absolute bottom-16 left-1/2 md:-translate-x-1/2 z-20">
           <ContactBar />
-        </div>
+        </div> 
       </div>
       <WhoWeAre />
       <OurProjects />

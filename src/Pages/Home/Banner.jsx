@@ -6,28 +6,27 @@ import { FaWhatsapp } from "react-icons/fa";
 import { IoCall } from "react-icons/io5";
 
 import ContactBar from "../../Components/ContactBar/ContactBar";
+import { phoneNumber, whatsappNumber } from "../../Containts/Numbers";
 
 const Banner = () => {
-  const phoneNumber = "+918549964996";
-  const whatsappNumber = "919986157030";
 
   const isMobile = () => window.innerWidth <= 767;
-
-  console.log(isMobile)
 
   return (
     <section>
       <div
-        className="xl:h-[47rem] lg:h-[35rem] h-[35rem] bg-cover relative bg-center"
+        className="xl:h-[47rem] md:h-[35rem] h-[32rem] bg-cover relative bg-center"
         style={{ backgroundImage: `url(${isMobile() ? mobView : deskView})` }}
       >
         <div className="md:py-10 py-2 md:px-14 px-4">
           <img
             src={logo}
-            alt=""
-            className="w-16 md:mx-0 mx-auto md:mt-0 mt-5"
+            alt="logo"
+            className="md:w-20 w-16 md:mx-0 mx-auto md:mt-0 mt-5 md:block hidden"
           />
         </div>
+
+        {/* <button className="absolute md:right-52 right-28 top-96 bg-yellow-500 hover:bg-yellow-600 px-4 py-1 text-lg" >Check Now</button> */}
 
         {/* <div className="md:w-4/5 md:absolute md:bottom-4 md:left-1/2 md:-translate-x-1/2">
           <ContactBar />

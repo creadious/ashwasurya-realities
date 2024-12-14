@@ -5,15 +5,12 @@ import videoBannerMob from "../../assets/Video/bannerVideoMob.mp4";
 
 import { FaWhatsapp } from "react-icons/fa";
 import { IoCall } from "react-icons/io5";
+import { phoneNumber, whatsappNumber } from "../../Containts/Numbers";
 
 const VideoBanner = () => {
-  
-  const phoneNumber = "+918217267159";
-  const whatsappNumber = "918217267159";
+ 
 
   const isMobile = () => window.innerWidth <= 767;
-
-
 
   return (
     <section className="relative md:h-screen h-[27rem] banner-video overflow-hidden">
