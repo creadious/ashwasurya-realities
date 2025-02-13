@@ -12,7 +12,7 @@ const FAQComponent = ({ faqs }) => {
     return (
 
         <div className="grid md:grid-cols-2 grid-cols-1 md:gap-x-5" >
-            {faqs.map((faq, index) => (
+            {faqs?.map((faq, index) => (
                 <div key={index} className="mb-4">
                     <div
                         className="cursor-pointer bg-gray-100 p-4 rounded-md transition duration-500 ease-in-out shadow-xl"

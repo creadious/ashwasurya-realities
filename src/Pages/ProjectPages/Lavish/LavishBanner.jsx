@@ -4,7 +4,7 @@ import logo from "../../../assets/logoash.webp";
 import { Link } from "react-router-dom";
 import { FaLocationDot } from "react-icons/fa6";
 
-const KeerthiBanner = () => {
+const LavishBanner = () => {
   const isMobile = () => window.innerWidth <= 767;
 
   return (
@@ -24,4 +24,4 @@ const KeerthiBanner = () => {
   );
 };
 
-export default KeerthiBanner;
+export default LavishBanner;

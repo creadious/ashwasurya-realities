@@ -31,19 +31,23 @@ const Brochure = () => {
   const allBrochureLink = [
     {
       projectName: "ATHARVA RITEWAY",
-      link: "https://drive.google.com/file/d/108Mm0cpFpJJ4y-KP5b_VrGXY-oNGPWMz/view?usp=drive_link",
+      link: "https://drive.google.com/file/d/108Mm0cpFpJJ4y-KP5b_VrGXY-oNGPWMz/view",
     },
     {
       projectName: "APS KEERTHI",
-      link: "https://drive.google.com/file/d/1vPqfi7PWI5lOyEhuGdiCsr-1EXrNyeks/view?usp=drive_link",
+      link: "https://drive.google.com/file/d/1vPqfi7PWI5lOyEhuGdiCsr-1EXrNyeks/view",
     },
     {
       projectName: "LOTUS",
-      link: "https://drive.google.com/file/d/1ChOqpWsGs1olJ4EW_KpiJ8EQugSB7yjC/view?usp=drive_link",
+      link: "https://drive.google.com/file/d/1ChOqpWsGs1olJ4EW_KpiJ8EQugSB7yjC/view",
     },
     {
       projectName: "RUTHVI",
-      link: "https://drive.google.com/file/d/1ixerdnuhVzvOtHJbXuKLbLobZYvweiQ8/view?usp=drive_link",
+      link: "https://drive.google.com/file/d/1ixerdnuhVzvOtHJbXuKLbLobZYvweiQ8/view",
+    },
+    {
+      projectName: "Ashwasurya Signature",
+      link: "https://drive.google.com/file/d/1-b1_8-OFhAu4CM-hB23isY8dZ6GNI-uS/view",
     },
   ];
 
@@ -289,7 +293,7 @@ const Brochure = () => {
                     --Select your brochure
                   </option>
                   {allBrochureLink.map((item, index) => (
-                    <option key={index} value={item.projectName}>
+                    <option key={index} value={item.projectName} className="uppercase">
                       {item.projectName}
                     </option>
                   ))}

@@ -10,11 +10,11 @@ import UserData from "../Pages/AdminPanel/UserData/UserData";
 import AdminLogin from "../Pages/AdminLogin/AdminLogin";
 import PrivateRoute from "./PrivateRoute";
 import Thankyou from "../Pages/Thankyou/Thankyou";
-import AuthProvider from "../provider/AuthProvider";
 import Keerthi from "../Pages/ProjectPages/Keerthi/Keerthi";
 import Lotus from "../Pages/ProjectPages/Lotus/Lotus";
 import Ruthvi from "../Pages/ProjectPages/Ruthvi/Ruthvi";
 import Lavish from "../Pages/ProjectPages/Lavish/Lavish";
+import Signature from "../Pages/ProjectPages/Signature/Signature";
 
 export const router = createBrowserRouter([
   {
@@ -53,6 +53,10 @@ export const router = createBrowserRouter([
       {
         path: "/projects/lavish",
         element: <Lavish />,
+      },
+      {
+        path: "/projects/signature",
+        element: <Signature />,
       },
     ],
   },

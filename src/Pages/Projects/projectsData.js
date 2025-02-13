@@ -7,69 +7,23 @@ import project5 from "../../assets/project5.webp";
 import complete1 from "../../assets/complete1.webp";
 import complete2 from "../../assets/complete2.webp";
 import complete3 from "../../assets/complete3.webp";
-
 import complete4 from "../../assets/upcoming1.png";
 import complete5 from "../../assets/project/Lavish/mob web.webp";
+import complete6 from "../../assets/project/Signature/signature-mobile.webp";
 
-export const projectsOngoing = [
-  {
-    id: 1,
-    title: "ATHARVA RITEWAY",
-    image: project3,
-    link: "/projects/atharva",
-  },
-  {
-    id: 2,
-    title: "RUTHVI",
-    image: project2,
-    link: "/projects/ruthvi",
-  },
-  {
-    id: 3,
-    title: "LOTUS",
-    image: project4,
-    link: "/projects/lotus",
-  },
-  {
-    id: 4,
-    title: "DESTINY FARM",
-    image: project1,
-  },
-];
+// Unified Project Data with `status` property
+export const projectsData = [
+  { id: 1, title: "ATHARVA RITEWAY", image: project3, link: "/projects/atharva", status: "ongoing" },
+  { id: 2, title: "RUTHVI", image: project2, link: "/projects/ruthvi", status: "ongoing" },
+  { id: 3, title: "LOTUS", image: project4, link: "/projects/lotus", status: "ongoing" },
+  { id: 4, title: "DESTINY FARM", image: project1, status: "ongoing" },
 
-export const projectsCompleted = [
-  {
-    id: 1,
-    title: "KEERTHI",
-    image: complete4,
-    link: "/projects/keerthi",
-  },
-  {
-    id: 2,
-    title: "JYESTA",
-    image: project5,
-  },
-  {
-    id: 3,
-    title: "BERYLE PHASE-1",
-    image: complete1,
-  },
-  {
-    id: 4,
-    title: "GREEN VALLEY",
-    image: complete2,
-  },
-  {
-    id: 5,
-    title: "SAI SADGURU PROJECT",
-    image: complete3,
-  },
-];
-export const projectsUpcoming = [
-  {
-    id: 1,
-    title: "LAVISH",
-    image: complete5,
-    link: "/projects/lavish",
-  },
+  { id: 5, title: "KEERTHI", image: complete4, link: "/projects/keerthi", status: "completed" },
+  { id: 6, title: "JYESTA", image: project5, status: "completed" },
+  { id: 7, title: "BERYLE PHASE-1", image: complete1, status: "completed" },
+  { id: 8, title: "GREEN VALLEY", image: complete2, status: "completed" },
+  { id: 9, title: "SAI SADGURU PROJECT", image: complete3, status: "completed" },
+
+  { id: 10, title: "LAVISH", image: complete5, link: "/projects/lavish", status: "upcoming" },
+  { id: 11, title: "SIGNATURE", image: complete6, link: "/projects/signature", status: "upcoming" },
 ];
