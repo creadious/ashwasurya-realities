@@ -41,7 +41,7 @@ const Amenities = () => {
               } `}
               onClick={() => setSelectedTab(1)}
             >
-              Amenities
+              Facilities 
             </button>
             <button
               className={`px-5 py-2 rounded-full ${
@@ -51,7 +51,7 @@ const Amenities = () => {
               } `}
               onClick={() => setSelectedTab(3)}
             >
-              Facilities
+              Proximities 
             </button>
             {/* <button
               className={`px-5 py-2 rounded-full ${
@@ -99,7 +99,7 @@ const Amenities = () => {
                   />
                   <h3 className="mt-1 text-sm text-center">
                     {" "}
-                    60ft Entrance Road
+                    30ft Entrance Road
                   </h3>
                 </div>
                 <div>
@@ -212,7 +212,7 @@ const Amenities = () => {
                     EXCELLENT CONNECTIVITY
                   </h4>
                   <div className="mt-2">
-                    <ul className="list-disc text-xs px-4 grid grid-cols-2 gap-x-10">
+                    <ul className="list-disc text-xs px-4 grid grid-cols-2 md:gap-x-10 gap-x-6">
                       <li>2 km to the upcoming sub-urban railway station</li>
                       <li>3 km to Nelamangala Junction</li>
                       <li>3 km to the upcoming Nelamangala Metro Station</li>
