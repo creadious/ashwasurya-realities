@@ -2,13 +2,11 @@ import { BiSolidRightArrow } from "react-icons/bi";
 import { Link } from "react-router-dom";
 import { FaLocationDot } from "react-icons/fa6";
 
-import image1 from "../../assets/ruthvi.webp";
+import image1 from "../../assets/signature.webp";
 import image2 from "../../assets/destiny.webp";
 import image3 from "../../assets/project/Lavish/lavish-poster.webp";
 import image4 from "../../assets/atharva.webp";
 import image5 from "../../assets/lotus.webp";
-
-import keerthiLogo from "../../assets/project/Keerthi/bannerImage.webp";
 
 const OurProjects = () => {
   return (
@@ -18,7 +16,7 @@ const OurProjects = () => {
       </h2>
       <div className="grid md:grid-cols-3 grid-cols-2 md:grid-rows-4 md:gap-5 gap-1 md:text-base text-xs">
         <Link
-          to={`/projects/ruthvi`}
+          to={`/projects/signature`}
           className="min-h-24 relative col-span-2 overflow-hidden"
         >
           <img
@@ -28,30 +26,14 @@ const OurProjects = () => {
           />
           <div className="absolute text-sm md:bottom-2 md:right-2 bottom-1 right-1">
             <Link
-              to={`/projects/ruthvi`}
-              className="flex items-center gap-1 hover:outline outline-1 hover:bg-white px-2 py-1 md:text-base text-[10px]"
+              to={`/projects/signature`}
+              className="flex items-center gap-1 hover:outline outline-1 text-white hover:bg-white hover:text-black px-2 py-1 md:text-base text-[10px]"
             >
               EXPLORE <BiSolidRightArrow className="text-slate-500" />
             </Link>
           </div>
           {/* text contents start 1 */}
-          <div className="absolute md:right-5 md:top-5 top-2 right-2">
-            <div className="text-center font-bold">
-              <p className="md:text-lg text-[10px] md:-mb-3 -mb-2">
-                ASHWASURYA
-              </p>
-              <h2 className="md:text-4xl text-lg">RUTHVI</h2>
-            </div>
-            <div className="flex items-center justify-center md:text-xs text-[6px] gap-1 md:mt-2 -mt-1">
-              <FaLocationDot className="text-red-700" />
-              <span>NELAMANGALA</span>
-            </div>
-          </div>
-          <div className="absolute md:bottom-5 bottom-2 left-1/2 -translate-x-1/2">
-            <h2 className="md:text-2xl font-bold md:leading-5 leading-3">
-              EMBRACE THOSE <br /> MOMENTS & LIVE FULLY
-            </h2>
-          </div>
+
           {/* text contents end 1 */}
         </Link>
         <Link

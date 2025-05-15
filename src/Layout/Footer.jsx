@@ -67,7 +67,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="font-light text-center mt-5 border-t pt-2">
-        <p>copyright @ Ashwasurya Realities</p>
+        <p>© {new Date().getFullYear()} Ashwasurya Realities. All rights reserved.</p>
       </div>
     </footer>
   );
