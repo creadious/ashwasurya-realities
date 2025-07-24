@@ -1,5 +1,5 @@
 import { RecaptchaVerifier, signInWithPhoneNumber } from "firebase/auth";
-import PhoneInput from "react-phone-input-2";
+// import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import useFireStore from "../../hooks/useFirestore";
 import Swal from "sweetalert2";
@@ -12,11 +12,10 @@ import OTPInput, { ResendOTP } from "otp-input-react";
 
 import toast from "react-hot-toast";
 import { useState } from "react";
+import PropTypes from "prop-types";
 import useAuth from "../../hooks/useAuth";
 
-import { useNavigate } from "react-router-dom";
-
-const Brochure = () => {
+const Brochure = ({ project }) => {
   const [showOtp, setShowOtp] = useState(false);
   const [otp, setOtp] = useState("");
   const [phn, setPhn] = useState("");
@@ -24,9 +23,7 @@ const Brochure = () => {
   const [verified, setVerified] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  const navigate = useNavigate();
-
-  const [brochure, setBrochure] = useState("");
+  const [brochure, setBrochure] = useState();
 
   const allBrochureLink = [
     {
@@ -48,6 +45,10 @@ const Brochure = () => {
     {
       projectName: "Ashwasurya Signature",
       link: "https://drive.google.com/file/d/1-b1_8-OFhAu4CM-hB23isY8dZ6GNI-uS/view",
+    },
+    {
+      projectName: "Ashwasurya Yashas",
+      link: "https://drive.google.com/file/d/17VIWZqYbvBD1RxLbM6L2TFnrGIip0kDE/view",
     },
   ];
 
@@ -286,14 +287,18 @@ const Brochure = () => {
                   name="project"
                   className="px-3 py-1 shadow-2xl border border-black"
                   required
-                  defaultValue="0"
+                  defaultValue={project || "0"}
                   onChange={handleBrochureChange}
                 >
                   <option value="0" disabled>
                     --Select your brochure
                   </option>
                   {allBrochureLink.map((item, index) => (
-                    <option key={index} value={item.projectName} className="uppercase">
+                    <option
+                      key={index}
+                      value={item.projectName}
+                      className="uppercase"
+                    >
                       {item.projectName}
                     </option>
                   ))}
@@ -313,6 +318,9 @@ const Brochure = () => {
       )}
     </>
   );
+};
+Brochure.propTypes = {
+  project: PropTypes.string,
 };
 
 export default Brochure;

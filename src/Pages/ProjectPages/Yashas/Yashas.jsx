@@ -1,17 +1,16 @@
-
-import LotusBanner from "./LotusBanner";
-import ProjectContents from "./ProjectContents";
+import FAQComponent from "../../../Components/FAQComponent/FAQComponent";
 import ContactUs from "../../Home/ContactUs";
 import Amenities from "./Amenities";
 import Facilities from "./Facilities";
-import FAQComponent from "../../../Components/FAQComponent/FAQComponent";
-import { lotusFAQs } from "./lotusFAQs";
+import ProjectContent from "./ProjectContent";
+import YashasBanner from "./YashasBanner";
+import { yashasFAQs } from "./yashasFAQs";
 
-const Lotus = () => {
+const Yashas = () => {
   return (
     <div>
-      <LotusBanner />
-      <ProjectContents />
+      <YashasBanner />
+      <ProjectContent />
       <Facilities />
       <Amenities />
       <ContactUs />
@@ -19,10 +18,10 @@ const Lotus = () => {
         <h2 className="md:text-5xl text-3xl md:mb-10 mb-5 text-slate-400 text-center">
           FAQ
         </h2>
-        <FAQComponent faqs={lotusFAQs} />
+        <FAQComponent faqs={yashasFAQs} />
       </div>
     </div>
   );
 };
 
-export default Lotus;
+export default Yashas;

@@ -15,6 +15,7 @@ import Lotus from "../Pages/ProjectPages/Lotus/Lotus";
 import Ruthvi from "../Pages/ProjectPages/Ruthvi/Ruthvi";
 import Lavish from "../Pages/ProjectPages/Lavish/Lavish";
 import Signature from "../Pages/ProjectPages/Signature/Signature";
+import Yashas from "../Pages/ProjectPages/Yashas/Yashas";
 
 export const router = createBrowserRouter([
   {
@@ -57,6 +58,10 @@ export const router = createBrowserRouter([
       {
         path: "/projects/signature",
         element: <Signature />,
+      },
+      {
+        path: "/projects/yashas",
+        element: <Yashas />,
       },
     ],
   },

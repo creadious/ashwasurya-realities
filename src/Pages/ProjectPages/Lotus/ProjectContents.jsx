@@ -20,7 +20,7 @@ const ProjectContents = () => {
       <p className="md:w-2/3 mx-auto md:text-base text-xs mt-10">
         is a BMRDA and RERA Approved A Khata 12Acres Project located at
         Nelamangala, a bustling corridor witnessing significant and rapid
-        development. The site's strategic location near key areas represents a
+        development. The {`site's`} strategic location near key areas represents a
         blend of joy and sustainability, featuring meticulously designed
         landscapes and charming gazebos.
       </p>
@@ -44,7 +44,7 @@ const ProjectContents = () => {
         >
           <ImCross />
         </button>
-        {modal && <Brochure />}
+        {modal && <Brochure project="LOTUS" />}
       </div>
     </section>
   );
