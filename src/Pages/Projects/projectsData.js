@@ -12,9 +12,17 @@ import complete5 from "../../assets/project/Lavish/mob web.webp";
 import complete6 from "../../assets/project/Signature/signature-mobile.webp";
 
 import projectYashas from '../..//assets/project/Yashas/Yashas-photo.webp'
+import projectLegacy from '../..//assets/project/Legacy/mobile-bg.webp'
 
 // Unified Project Data with `status` property
 export const projectsData = [
+  {
+    id: 13,
+    title: "Legacy",
+    image: projectLegacy,
+    link: "/projects/legacy",
+    status: "ongoing",
+  },
   {
     id: 12,
     title: "Yashas",

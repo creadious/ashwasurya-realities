@@ -16,6 +16,8 @@ import Ruthvi from "../Pages/ProjectPages/Ruthvi/Ruthvi";
 import Lavish from "../Pages/ProjectPages/Lavish/Lavish";
 import Signature from "../Pages/ProjectPages/Signature/Signature";
 import Yashas from "../Pages/ProjectPages/Yashas/Yashas";
+import Legacy from "../Pages/ProjectPages/Legacy/Legacy";
+import TermsPage from "../Pages/TermsPage/TermsPage";
 
 export const router = createBrowserRouter([
   {
@@ -30,6 +32,10 @@ export const router = createBrowserRouter([
       {
         path: "/projects",
         element: <Projects />,
+      },
+      {
+        path: "/terms-and-conditions",
+        element: <TermsPage />,
       },
       {
         path: "/maintenance",
@@ -62,6 +68,10 @@ export const router = createBrowserRouter([
       {
         path: "/projects/yashas",
         element: <Yashas />,
+      },
+      {
+        path: "/projects/legacy",
+        element: <Legacy />,
       },
     ],
   },

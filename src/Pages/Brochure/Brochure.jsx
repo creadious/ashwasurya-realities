@@ -27,6 +27,10 @@ const Brochure = ({ project }) => {
 
   const allBrochureLink = [
     {
+      projectName: "Ashwasurya Legacy",
+      link: "#",
+    },
+    {
       projectName: "ATHARVA RITEWAY",
       link: "https://drive.google.com/file/d/108Mm0cpFpJJ4y-KP5b_VrGXY-oNGPWMz/view",
     },
@@ -303,13 +307,11 @@ const Brochure = ({ project }) => {
                     </option>
                   ))}
                 </select>
-                <button
-                  type="submit"
-                  disabled={loading}
-                  className="border border-black md:w-40 w-32 mx-auto py-2 hover:bg-black hover:text-white flex items-center justify-center gap-1"
-                >
-                  {loading && <CgSpinner className="mt-1 animate-spin" />}
-                  Download Now
+                <button type="submit" disabled={loading} className="bg-black p-1 flex items-center justify-center gap-1 md:w-40 w-32 mx-auto">
+                  <span className="border w-full py-2 border-white hover:bg-white duration-150 bg-black text-white hover:text-black">
+                    {loading && <CgSpinner className="mt-1 animate-spin" />}
+                    Download Now
+                  </span>
                 </button>
               </form>
             </section>

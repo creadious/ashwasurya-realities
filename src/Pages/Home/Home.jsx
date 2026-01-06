@@ -1,8 +1,4 @@
-import { Link } from "react-router-dom";
 import ContactBar from "../../Components/ContactBar/ContactBar";
-import KeerthiBanner from "../ProjectPages/Keerthi/KeerthiBanner";
-import LavishBanner from "../ProjectPages/Lavish/LavishBanner";
-import Banner from "./Banner";
 import ContactUs from "./ContactUs";
 import FAQs from "./FAQs";
 import Gallery from "./Gallery";

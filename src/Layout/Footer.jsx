@@ -19,7 +19,7 @@ const Footer = () => {
       <div className="mt-20 flex md:items-end gap-10 justify-between md:flex-row flex-col">
         <div className="text-gray-400">
           <h4 className="mb-3">CONTACT INFO</h4>
-          <p>+91 {phoneNumber}</p>
+          <p>{phoneNumber}</p>
           <p className="sm:text-base text-xs">
             geethanjali@ashwasuryarealities.com
           </p>

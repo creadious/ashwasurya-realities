@@ -15,7 +15,7 @@ const Facilities = () => {
             alt="icon"
             className="md:w-16 md:h-16 h-10 w-10 object-contain"
           />
-          <div className="flex flex-col justify-around">
+          <div className="w-full">
             <h2 className="md:text-sm text-xs font-bold text-sky-950">
               ACCESS TO AIRPORT
             </h2>
@@ -33,11 +33,11 @@ const Facilities = () => {
             alt="icon"
             className="md:w-16 md:h-16 h-10 w-10 object-contain"
           />
-          <div className="flex flex-col justify-around">
+          <div className="w-full">
             <h2 className="md:text-sm text-xs font-bold text-sky-950">
               PREMIUM LOCATION
             </h2>
-            <p className="md:text-sm text-xs text-right">
+            <p className="md:text-sm text-xs">
               Attached to Indian Navy Commander Cheif Staff Head Quaters Land
             </p>
             <span className="md:h-1 h-[1px] md:mt-5 mt-3 w-full block bg-black"></span>
@@ -50,7 +50,7 @@ const Facilities = () => {
             alt="icon"
             className="md:w-16 md:h-16 h-10 w-10  object-contain"
           />
-          <div className="flex flex-col justify-around">
+          <div className="w-full">
             <h2 className="md:text-sm text-xs font-bold text-sky-950">
               ZONAL DEVELOPMENT
             </h2>
@@ -67,11 +67,11 @@ const Facilities = () => {
             alt="icon"
             className="md:w-16 md:h-16 h-10 w-10 object-contain"
           />
-          <div className="flex flex-col justify-around">
+          <div className="w-full">
             <h2 className="md:text-sm text-xs font-bold text-sky-950">
               ACCESSIBILITY
             </h2>
-            <p className="md:text-sm text-xs text-right">
+            <p className="md:text-sm text-xs">
               Close proximity to Railway Station and Bus Stop
             </p>
             <span className="md:h-1 h-[1px] md:mt-5 mt-3 w-full block bg-black"></span>
@@ -84,14 +84,14 @@ const Facilities = () => {
             alt="icon"
             className="md:w-16 md:h-16 h-10 w-10  object-contain"
           />
-          <div className="flex flex-col justify-around">
+          <div className="w-full">
             <h2 className="md:text-sm text-xs font-bold text-sky-950">
               VICINITY
             </h2>
             <p className="md:text-sm text-xs">
               Near to School, Hospital, Industrial Area and many more.
             </p>
-            <span className="md:h-1 h-[1px] md:mt-5 mt-3 w-full block bg-black"></span>
+            <span className="md:h-1 h-[1px] md:mt-5 mt-3 w-full block bg-sky-950"></span>
           </div>
         </div>
       </div>
