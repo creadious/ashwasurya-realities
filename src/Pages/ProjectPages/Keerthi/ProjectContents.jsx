@@ -1,8 +1,6 @@
 import { ImCross } from "react-icons/im";
-import { FaLocationDot } from "react-icons/fa6";
 import Brochure from "../../Brochure/Brochure";
 import { useState } from "react";
-import toast from "react-hot-toast";
 
 import keerthiLogo from "../../../assets/project/Keerthi/logo.png";
 
@@ -40,7 +38,7 @@ const ProjectContents = () => {
         >
           <ImCross />
         </button>
-        {modal && <Brochure />}
+        {modal && <Brochure project={`APS KEERTHI`} />}
       </div>
     </section>
   );

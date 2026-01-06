@@ -44,7 +44,7 @@ const ProjectContents = () => {
         >
           <ImCross />
         </button>
-        {modal && <Brochure />}
+        {modal && <Brochure project={`RUTHVI`} />}
       </div>
     </section>
   );

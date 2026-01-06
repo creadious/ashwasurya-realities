@@ -1,12 +1,14 @@
 import { useState, useEffect, useRef } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
-import { Link } from "react-router-dom";
-import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import { animateScroll as scroll } from "react-scroll";
 
 const Navbar = () => {
     const [open, setOpen] = useState(false);
     const navRef = useRef();
+    const location = useLocation();
+    const navigate = useNavigate();
 
     useEffect(() => {
         const handleOutsideClick = (event) => {
@@ -22,12 +24,43 @@ const Navbar = () => {
         };
     }, []);
 
+    // Handle scrolling to sections when location changes
+    useEffect(() => {
+        const hash = location.hash;
+        if (hash) {
+            const sectionId = hash.replace("#", "");
+            setTimeout(() => {
+                const element = document.getElementById(sectionId);
+                if (element) {
+                    element.scrollIntoView({ behavior: "smooth" });
+                }
+            }, 100);
+        }
+    }, [location]);
+
     const toggleDrawer = () => {
         setOpen(!open);
     };
 
     const scrollToTop = () => {
         scroll.scrollToTop();
+    };
+
+    const handleSectionClick = (sectionId) => {
+        setOpen(false); // Close mobile menu
+        
+        if (location.pathname !== "/") {
+            // If not on home page, navigate to home with hash
+            navigate(`/#${sectionId}`);
+        } else {
+            // If already on home page, scroll directly
+            setTimeout(() => {
+                const element = document.getElementById(sectionId);
+                if (element) {
+                    element.scrollIntoView({ behavior: "smooth" });
+                }
+            }, 100);
+        }
     };
 
     return (
@@ -58,19 +91,28 @@ const Navbar = () => {
                             <Link to="/projects">Projects</Link>
                         </li> */}
                         <li>
-                            <ScrollLink to="about" className="cursor-pointer" smooth={true} duration={500}>
+                            <button
+                                onClick={() => handleSectionClick("about")}
+                                className="cursor-pointer bg-transparent border-none text-white text-2xl"
+                            >
                                 About
-                            </ScrollLink>
+                            </button>
                         </li>
                         <li>
-                            <ScrollLink to="service" className="cursor-pointer" smooth={true} duration={500}>
+                            <button
+                                onClick={() => handleSectionClick("service")}
+                                className="cursor-pointer bg-transparent border-none text-white text-2xl"
+                            >
                                 Service
-                            </ScrollLink>
+                            </button>
                         </li>
                         <li>
-                            <ScrollLink to="contact" className="cursor-pointer" smooth={true} duration={500}>
+                            <button
+                                onClick={() => handleSectionClick("contact")}
+                                className="cursor-pointer bg-transparent border-none text-white text-2xl"
+                            >
                                 Contact
-                            </ScrollLink>
+                            </button>
                         </li>
                     </ul>
                 </div>

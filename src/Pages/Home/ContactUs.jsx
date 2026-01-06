@@ -1,15 +1,11 @@
-import { useRef, useState } from "react";
+import { useState } from "react";
 import toast from "react-hot-toast";
 import { ImSpinner6 } from "react-icons/im";
-import emailjs from "@emailjs/browser";
 import useFireStore from "../../hooks/useFirestore";
-
-import { useNavigate } from "react-router-dom";
 
 const ContactUs = () => {
   const [check, setCheck] = useState(false);
 
-  const navigate = useNavigate();
 
   const handleChange = () => {
     setCheck(!check);

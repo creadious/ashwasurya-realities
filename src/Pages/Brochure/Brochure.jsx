@@ -27,10 +27,6 @@ const Brochure = ({ project }) => {
 
   const allBrochureLink = [
     {
-      projectName: "Ashwasurya Legacy",
-      link: "#",
-    },
-    {
       projectName: "ATHARVA RITEWAY",
       link: "https://drive.google.com/file/d/108Mm0cpFpJJ4y-KP5b_VrGXY-oNGPWMz/view",
     },
