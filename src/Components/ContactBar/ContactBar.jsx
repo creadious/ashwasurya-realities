@@ -39,7 +39,7 @@ const ContactBar = () => {
     }
 
     const data = { name, email, phone };
-    const sendData = await useFireStore(data);
+    const sendData = await useFireStore(data); 
 
     if (sendData) {
       toast.success("Form submitted successfully!");
