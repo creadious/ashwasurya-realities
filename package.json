@@ -12,7 +12,9 @@
   "dependencies": {
     "@emailjs/browser": "^3.12.1",
     "@smastrom/react-rating": "^1.4.0",
+    "baseline-browser-mapping": "^2.9.14",
     "build": "^0.1.4",
+    "caniuse-lite": "^1.0.30001764",
     "firebase": "^10.7.2",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",

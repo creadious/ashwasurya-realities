@@ -18,7 +18,7 @@ const useFireStore = async (data) => {
 
     // After successfully adding the document, hit the API
     const apiResponse = await fetch(
-      "https://connect.leadrat.com/api/v1/integration/Website",
+      "https://connect.leadrat.com/api/v1/integration/Website",  
       {
         method: "POST",
         headers: {
