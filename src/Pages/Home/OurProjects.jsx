@@ -4,8 +4,8 @@ import { FaLocationDot } from "react-icons/fa6";
 
 import image1 from "../../assets/signature.webp";
 import image2 from "../../assets/destiny.webp";
-import image3 from "../../assets/project/Lavish/lavish-poster.webp";
-import image4 from "../../assets/atharva.webp";
+import image3 from "../../assets/project/Legacy/mobile-bg.webp";
+import image4 from "../../assets/project/Finest/image from all project section.webp";
 import image5 from "../../assets/lotus.webp";
 
 const OurProjects = () => {
@@ -72,18 +72,19 @@ const OurProjects = () => {
           {/* text contents end 2 */}
         </Link>
         <Link
-          to={`/projects/lavish`}
+          to={`/projects/legacy`}
           className="relative md:row-span-2 overflow-hidden"
         >
+          <span className="new-launch-badge">New Launch</span>
           <img
             src={image3}
-            alt="lavish"
+            alt="legacy"
             className="w-full h-full hover:scale-105 duration-200 object-cover"
           />
           <div className="absolute text-sm md:bottom-2 md:right-2 bottom-0 right-0">
             <Link
-              to={`/projects/lavish`}
-              className="flex items-center gap-1 hover:outline outline-1 text-white hover:text-black hover:bg-white px-2 py-1 md:text-base text-[10px]"
+              to={`/projects/legacy`}
+              className="flex items-center gap-1 hover:outline outline-1 text-black hover:bg-white px-2 py-1 md:text-base text-[10px]"
             >
               EXPLORE <BiSolidRightArrow className="text-slate-500" />
             </Link>
@@ -115,9 +116,10 @@ const OurProjects = () => {
           {/* text contents end 3 */}
         </Link>
         <Link
-          to={`/projects/atharva`}
+          to={`/projects/finest`}
           className="min-h- relative row-span-3 overflow-hidden"
         >
+          <span className="new-launch-badge">New Launch</span>
           <img
             src={image4}
             alt=""
@@ -125,7 +127,7 @@ const OurProjects = () => {
           />
           <div className="absolute text-sm md:bottom-2 md:right-2 bottom-1 right-1">
             <Link
-              to={`/projects/atharva`}
+              to={`/projects/finest`}
               className="flex items-center gap-1 hover:outline outline-1 text-white hover:text-black hover:bg-white px-2 py-1 md:text-base text-[10px]"
             >
               EXPLORE <BiSolidRightArrow className="text-slate-500" />
@@ -133,18 +135,18 @@ const OurProjects = () => {
           </div>
           {/* text contents start 4 */}
           <div className="absolute left-1/2 -translate-x-1/2 md:top-5 top-2 text-white">
-            <div className="text-center font-bold">
+            <div className="text-center font-bold hidden">
               <p className="md:text-lg text-xs md:-mb-2 -mb-1">ASHWASURYA</p>
               <h2 className="md:text-4xl text-sm text-nowrap">
                 ATHARVA RITEWAY
               </h2>
             </div>
-            <div className="flex items-center justify-center gap-1 md:mt-3">
+            <div className=" items-center justify-center gap-1 md:mt-3 hidden">
               <FaLocationDot className="text-red-700" />
               <span>OFF MYSORE ROAD</span>
             </div>
           </div>
-          <div className="absolute md:bottom-28 bottom-10 md:left-5 left-2 text-white">
+          <div className="absolute md:bottom-28 bottom-10 md:left-5 left-2 text-white hidden">
             <h2 className="md:text-3xl text-[10px] font-bold md:leading-6 leading-3">
               CRAFTING HAPPINESS <br /> IN EVERY PLOTS
             </h2>

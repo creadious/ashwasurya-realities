@@ -13,15 +13,25 @@ import complete6 from "../../assets/project/Signature/signature-mobile.webp";
 
 import projectYashas from '../..//assets/project/Yashas/Yashas-photo.webp'
 import projectLegacy from '../..//assets/project/Legacy/mobile-bg.webp'
+import projectFinest from "../../assets/project/Finest/image from all project section.webp"
 
 // Unified Project Data with `status` property
 export const projectsData = [
+  {
+    id: 15,
+    title: "Finest",
+    image: projectFinest,
+    link: "/projects/finest",
+    status: "ongoing",
+    isNew: true,
+  },
   {
     id: 13,
     title: "Legacy",
     image: projectLegacy,
     link: "/projects/legacy",
     status: "ongoing",
+    isNew: true,
   },
   {
     id: 12,

@@ -1,2 +1,2 @@
 export const phoneNumber = "+918339963996";
-export const whatsappNumber = "917899069093";
+export const whatsappNumber = "919900023502";

@@ -95,9 +95,10 @@ const ProjectSlider = ({ projects }) => (
     }}
     modules={[Pagination, Autoplay]}
   >
-    {projects?.map(({ id, title, image, link }) => (
+    {projects?.map(({ id, title, image, link, isNew }) => (
       <SwiperSlide key={id}>
-        <div className="bg-cover bg-center">
+        <div className="bg-cover bg-center relative overflow-hidden">
+          {isNew && <span className="new-launch-badge">New Launch</span>}
           <img src={image} alt={title} className="h-96 w-full object-cover" />
           <div className="text-center font-bold py-5">
             <h5 className="text-sm">ASHWASURYA</h5>

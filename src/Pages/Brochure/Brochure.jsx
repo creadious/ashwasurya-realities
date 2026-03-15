@@ -27,34 +27,45 @@ const Brochure = ({ project }) => {
 
   const allBrochureLink = [
     {
+      id: 1,
       projectName: "ATHARVA RITEWAY",
       link: "https://drive.google.com/file/d/108Mm0cpFpJJ4y-KP5b_VrGXY-oNGPWMz/view",
     },
     {
+      id: 2,
       projectName: "APS KEERTHI",
       link: "https://drive.google.com/file/d/1vPqfi7PWI5lOyEhuGdiCsr-1EXrNyeks/view",
     },
     {
+      id: 3,
       projectName: "LOTUS",
       link: "https://drive.google.com/file/d/1ChOqpWsGs1olJ4EW_KpiJ8EQugSB7yjC/view",
     },
     {
+      id: 4,
       projectName: "RUTHVI",
       link: "https://drive.google.com/file/d/1ixerdnuhVzvOtHJbXuKLbLobZYvweiQ8/view",
     },
     {
+      id: 5,
       projectName: "Ashwasurya Signature",
       link: "https://drive.google.com/file/d/1-b1_8-OFhAu4CM-hB23isY8dZ6GNI-uS/view",
     },
     {
+      id: 6,
       projectName: "Ashwasurya Yashas",
       link: "https://drive.google.com/file/d/17VIWZqYbvBD1RxLbM6L2TFnrGIip0kDE/view",
     },
+    // {
+    //   id: 7,
+    //   projectName: "Ashwasurya Finest",
+    //   link: "https://drive.google.com/file/d/1qcZjFK-QB9GH6jgAcokMZWmWzH_iu0gY/view?usp=sharing",
+    // },
   ];
 
   const handleBrochureChange = (e) => {
     const selectedProject = allBrochureLink.find(
-      (item) => item.projectName === e.target.value
+      (item) => item.projectName === e.target.value,
     );
     setBrochure(selectedProject?.link || "");
   };
@@ -133,7 +144,7 @@ const Brochure = ({ project }) => {
             // Response expired. Ask user to solve reCAPTCHA again.
             // ...
           },
-        }
+        },
       );
     }
   }
@@ -303,7 +314,11 @@ const Brochure = ({ project }) => {
                     </option>
                   ))}
                 </select>
-                <button type="submit" disabled={loading} className="bg-black p-1 flex items-center justify-center gap-1 md:w-40 w-32 mx-auto">
+                <button
+                  type="submit"
+                  disabled={loading}
+                  className="bg-black p-1 flex items-center justify-center gap-1 md:w-40 w-32 mx-auto"
+                >
                   <span className="border w-full py-2 border-white hover:bg-white duration-150 bg-black text-white hover:text-black">
                     {loading && <CgSpinner className="mt-1 animate-spin" />}
                     Download Now
