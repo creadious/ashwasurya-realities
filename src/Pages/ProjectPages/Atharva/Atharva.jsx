@@ -5,7 +5,7 @@ import Amenities from "./Amenities";
 import ProjectContents from "./ProjectContents";
 import Facilities from "./Facilities";
 import ProjectsFAQs from "../../../Components/ProjectsFAQs/ProjectsFAQs";
-import { atharvaFAQs } from "./AtharvaFAQs";
+import { atharvaFAQs } from "./atharvaFAQs";
 
 import bannerImageMob from "../../../assets/project/atharva.png";
 import bannerImageDesk from "../../../assets/project/atharva-desktop.png";

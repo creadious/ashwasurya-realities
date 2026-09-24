@@ -9,7 +9,7 @@ const WhoWeAre = () => {
                 <h2 className="md:text-5xl text-3xl md:mb-10 mb-5">WHO <span className='text-slate-400'>WE ARE</span></h2>
                 <p className='md:text-xl font-light'>
                     <p>
-                        Nestled in Bengaluru for five years, Ashwasurya Realities
+                        Nestled in Bengaluru for seven years, Ashwasurya Realities
                         stands as a beacon of excellence in plotted development. Our
                         projects seamlessly blend modern living with nature, oering
                         meticulously planned spaces that transcend mere pieces of

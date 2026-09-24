@@ -2,7 +2,7 @@ import { BiSolidRightArrow } from "react-icons/bi";
 import { Link } from "react-router-dom";
 import { FaLocationDot } from "react-icons/fa6";
 
-import image1 from "../../assets/signature.webp";
+import image1 from "../../assets/project/JdSignature/website banner.jpg.webp";
 import image2 from "../../assets/destiny.webp";
 import image3 from "../../assets/project/Legacy/mobile-bg.webp";
 import image4 from "../../assets/project/Finest/image from all project section.webp";
@@ -16,9 +16,10 @@ const OurProjects = () => {
       </h2>
       <div className="grid md:grid-cols-3 grid-cols-2 md:grid-rows-4 md:gap-5 gap-1 md:text-base text-xs">
         <Link
-          to={`/projects/signature`}
+          to={`/projects/jd-signature`}
           className="min-h-24 relative col-span-2 overflow-hidden"
         >
+          <span className="new-launch-badge">New Launch</span>
           <img
             src={image1}
             alt=""
@@ -26,7 +27,7 @@ const OurProjects = () => {
           />
           <div className="absolute text-sm md:bottom-2 md:right-2 bottom-1 right-1">
             <Link
-              to={`/projects/signature`}
+              to={`/projects/jd-signature`}
               className="flex items-center gap-1 hover:outline outline-1 text-white hover:bg-white hover:text-black px-2 py-1 md:text-base text-[10px]"
             >
               EXPLORE <BiSolidRightArrow className="text-slate-500" />

@@ -61,6 +61,11 @@ const Brochure = ({ project }) => {
     //   projectName: "Ashwasurya Finest",
     //   link: "https://drive.google.com/file/d/1qcZjFK-QB9GH6jgAcokMZWmWzH_iu0gY/view?usp=sharing",
     // },
+    {
+      id: 8,
+      projectName: "JD Signature",
+      link: "/brochures/jd-signature.pdf",
+    },
   ];
 
   const handleBrochureChange = (e) => {

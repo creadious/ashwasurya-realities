@@ -19,6 +19,7 @@ import Yashas from "../Pages/ProjectPages/Yashas/Yashas";
 import Legacy from "../Pages/ProjectPages/Legacy/Legacy";
 import TermsPage from "../Pages/TermsPage/TermsPage";
 import Finest from "../Pages/ProjectPages/Finest/Finest";
+import JdSignature from "../Pages/ProjectPages/JdSignature/JdSignature";
 
 export const router = createBrowserRouter([
   {
@@ -77,6 +78,10 @@ export const router = createBrowserRouter([
       {
         path: "/projects/finest",
         element: <Finest />,
+      },
+      {
+        path: "/projects/jd-signature",
+        element: <JdSignature />,
       },
     ],
   },

@@ -14,9 +14,18 @@ import complete6 from "../../assets/project/Signature/signature-mobile.webp";
 import projectYashas from '../..//assets/project/Yashas/Yashas-photo.webp'
 import projectLegacy from '../..//assets/project/Legacy/mobile-bg.webp'
 import projectFinest from "../../assets/project/Finest/image from all project section.webp"
+import projectJdSignature from "../../assets/project/JdSignature/Gemini_Generated_Image_ds4vilds4vilds4v.webp"
 
 // Unified Project Data with `status` property
 export const projectsData = [
+  {
+    id: 16,
+    title: "JD SIGNATURE",
+    image: projectJdSignature,
+    link: "/projects/jd-signature",
+    status: "ongoing",
+    isNew: true,
+  },
   {
     id: 15,
     title: "Finest",
@@ -45,21 +54,21 @@ export const projectsData = [
     title: "LAVISH",
     image: complete5,
     link: "/projects/lavish",
-    status: "ongoing",
+    status: "completed",
   },
   {
     id: 11,
     title: "SIGNATURE",
     image: complete6,
     link: "/projects/signature",
-    status: "ongoing",
+    status: "completed",
   },
   {
     id: 1,
     title: "ATHARVA RITEWAY",
     image: project3,
     link: "/projects/atharva",
-    status: "ongoing",
+    status: "completed",
   },
   {
     id: 2,
@@ -75,7 +84,7 @@ export const projectsData = [
     link: "/projects/lotus",
     status: "completed",
   },
-  { id: 4, title: "DESTINY FARM", image: project1, status: "ongoing" },
+  { id: 4, title: "DESTINY FARM", image: project1, status: "completed" },
 
   {
     id: 5,
